@@ -1,0 +1,85 @@
+Failure_Report Log Initalized on: 2013/03/21 at 16:15:04 EDT
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:06 EDT
+Time Program has been running: 2178ms
+
+Could not find source file for copy and paste for C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:06 EDT
+Time Program has been running: 2179ms
+
+Could not find source file for copy and paste for C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:06 EDT
+Time Program has been running: 2179ms
+
+Could not find source file for copy and paste for C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:06 EDT
+Time Program has been running: 2222ms
+
+Could not find source file for copy and paste for C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:06 EDT
+Time Program has been running: 2223ms
+
+Could not find source file for copy and paste for C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:06 EDT
+Time Program has been running: 2223ms
+
+Could not find source file for copy and paste for C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:11 EDT
+Time Program has been running: 7115ms
+
+Could not find source file for copy and paste for C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-A
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:11 EDT
+Time Program has been running: 7117ms
+
+Could not find source file for copy and paste for C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:11 EDT
+Time Program has been running: 7175ms
+
+Could not find source file for copy and paste for C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-A
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:11 EDT
+Time Program has been running: 7176ms
+
+Could not find source file for copy and paste for C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:16 EDT
+Time Program has been running: 12417ms
+
+Could not find source file for copy and paste for C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12465ms
+
+Could not find source file for copy and paste for C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:18 EDT
+Time Program has been running: 14147ms
+
+Could not find source file for copy and paste for C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A\SubFolder C - A - A
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:18 EDT
+Time Program has been running: 14209ms
+
+Could not find source file for copy and paste for C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A\SubFolder C - A - A

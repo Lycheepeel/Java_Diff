@@ -1,0 +1,131 @@
+		#content table tr:nth-child(2n)
+		{
+			background: #E8EDFF;/*#D8DDEF; */	
+		}
+		
+		#content td, #content th
+		{
+			border-left: 1px solid #556599;
+			border-top: 1px solid #556599;
+			border-bottom: 1px solid #556599;
+		}
+		
+		#sidebar #bottom #InfoBar #A
+		{
+			position: absolute;
+			width: inherit;
+			height: 100%;
+			visibility: hidden;
+		}
+		
+		#sidebar #bottom #InfoBar #B
+		{
+			position: absolute;
+			width: inherit;
+			height: 100%;
+			visibility: hidden;
+		}
+		
+		#sidebar #bottom #InfoBar #C
+		{
+			position: absolute;
+			width: inherit;
+			height: 100%;
+			visibility: hidden;
+		}
+		
+		#sidebar #bottom #InfoBar #D
+		{
+			position: absolute;
+			width: inherit;
+			height: 100%;
+			visibility: visible;
+		}
+		
+		#LineNumber
+		{
+			padding-left: 15px;
+		}
+		
+		#sidebarDropDownMenu
+		{
+			position: relative;
+			border-color: #0068D2;
+			border-style: dotted;
+			border-width: 2px;
+			width: 175px;
+			left: -1px;
+			/*
+			border-top: solid;
+			border-bottom: solid;
+			*/
+		}
+		
+		#sidebarDropDownMenu a:hover span.dropLevelOne
+		{
+			left: 175px;
+			top: -2px;
+		}
+		
+		#sidebarDropDownMenu ul li
+		{
+			display: none;
+			padding: 0px;
+			margin: 0px;
+		}
+		
+		#sidebarDropDownMenu ul:hover li
+		{
+			cursor: pointer;
+			opacity: 0.965;
+			display: block; 
+			/*position: relative;*/ 
+			width: 158px;
+			right: 5px;
+			background: #E2EAFB;
+			color: #000000; 
+			font-size: 12px;
+			left: 175px;
+			top: -2px;
+		}
+		
+		#sidebarDropDownMenu li
+		{
+			list-style: none;
+			background: #E2EAFB;
+			border:dotted #0068D2; 
+			border-width: 2px;
+			padding: 1px 0px;
+			margin-bottom: 3px;
+			text-align: center;
+			display: block;
+		}
+		
+		table.dropdownMenu tr
+		{
+			position: relative;
+			top: 100px;
+			padding-top: 5px;
+		}
+		
+		#sidebar #top table
+		{
+			border-collapse: separate; !important;
+		}
+		
+		table.dropdownMenu
+		{
+			position: absolute; 
+			width: 179px;
+			padding-left: 0px;
+			left: -2px;
+			
+			border-spacing:0px 6px;
+		}
+		
+		table.dropdownMenu td
+		{
+			background: #E2EAFB;
+			text-align: center;
+			margin-top: 5px;
+		}

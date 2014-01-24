@@ -1,0 +1,383 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>
+		
+	</title>
+	<link rel="stylesheet" type="text/css" href="global.css">
+	<link rel="stylesheet" type="text/css" href="difference_file.css">
+	
+	<script type="text/javascript">
+		var activeElement = "A";
+		var animationInProgress = false;
+		function hideInfoBar()
+		{
+			try
+			{
+				document.getElementById("A").style.visibility="hidden";
+				document.getElementById("B").style.visibility="hidden";
+				document.getElementById("C").style.visibility="hidden";
+				document.getElementById("D").style.visibility="hidden";
+			}
+			catch(err)
+			{
+				
+			}
+		};
+		function infobarShowA()
+		{
+			hideInfoBar();
+			document.getElementById("A").style.visibility="visible";
+			activeElement = "A";
+			console.log("active Element = A");
+			console.log(activeElement);
+		};
+		function infobarShowB()
+		{
+			hideInfoBar();
+			document.getElementById("B").style.visibility="visible";
+			activeElement = "B";
+			console.log("active Element = B");
+			console.log(activeElement);
+		};
+		function infobarShowC()
+		{
+			hideInfoBar();
+			document.getElementById("C").style.visibility="visible";
+			activeElement = "C";
+			console.log("active Element = C");
+			console.log(activeElement);
+		};
+		function infobarShowD()
+		{
+			hideInfoBar();
+			document.getElementById("D").style.visibility="visible";
+			activeElement = "D";
+			console.log("active Element = D");
+			console.log(activeElement);
+		};
+		
+		function animateInfoBar(targetSize, element)
+		{
+			animationInProgress = true;
+			var current = document.getElementById(element).style.width;
+			console.log(current);
+			console.log(parseInt(current));
+			var currentSize = parseInt(current);
+			var counter = 0;
+			if(targetSize < currentSize)
+			{
+				var interval = window.setInterval(function()
+				{
+					currentSize -= 10;
+					counter++;
+					document.getElementById(element).style.width = currentSize + 'px';
+					console.log("Animating from" + currentSize);
+					if(currentSize <= targetSize)
+					{
+						clearInterval(interval)
+					}
+					if(counter > 100)
+					{
+						clearInterval(interval)
+					}
+				}
+				,50);
+			}
+			else
+			{
+				var interval = window.setInterval(function()
+				{
+					currentSize += 10;
+					counter++;
+					document.getElementById(element).style.width = currentSize + 'px';
+					console.log("Animating from" + currentSize);
+					if(currentSize >= targetSize)
+					{
+						clearInterval(interval)
+					}
+					if(counter > 100)
+					{
+						clearInterval(interval)
+					}
+				}
+				,50);
+			}
+			animationInProgress = false;
+			counter = 0;
+		};
+		
+		function expandInfoBar()
+		{
+			//http://onwebdev.blogspot.com/2011/02/javascript-animations-without-jquery.html
+			document.getElementById("bottom").style.width = "310px";
+			if(animationInProgress == false)
+			{
+				//animateInfoBar(310, 'bottom');
+			}
+			
+		};
+		
+		function resetInfoBar()
+		{
+			document.getElementById("bottom").style.width="155px";
+			if(animationInProgress == false)
+			{
+				
+				//animateInfoBar(155, 'bottom');
+			}
+			hardCounted = false;
+			
+		};
+		
+		function infobarHover(boolean)
+		{
+			if(boolean == true)
+			{
+				if(activeElement == "D" || activeElement == "B" || activeElement == "C")
+				{
+					expandInfoBar();
+				}
+			}
+			else
+			{
+				resetInfoBar();
+			}
+		};
+	</script>
+	
+	<script type="text/javascript">
+		var hardCounted = false;
+		function updateD(lineNumber, text, boolean)
+		{
+			if(boolean == true)
+			{
+				document.getElementById("LineNumber").innerHTML = lineNumber;
+				document.getElementById("Comment-Text").value = text;
+				console.log("Click");
+				hardCounted = true;
+			}
+			else
+			{
+				if(hardCounted == false)
+				{
+					document.getElementById("LineNumber").innerHTML = lineNumber;
+					document.getElementById("Comment-Text").value = text;
+					console.log("Click");
+				}
+			}
+		};
+		
+		function resetD()
+		{
+			if(hardCounted == false)
+			{
+				document.getElementById("LineNumber").innerHTML = "";
+				document.getElementById("Comment-Text").value = "";
+				console.log("Clicky");
+			}
+		}
+	</script>
+</head>
+
+<body>	
+<div id = "main">
+	<div id = "center">
+		<div id = "topbar">
+			<span class="MainInfo">
+				TITLE - x
+			</span>
+			<span class="rightInfo">
+				Left Folder:&nbsp; <span class="float">INSERT</span>
+				<br> Right Folder:&nbsp; <span class = "float">INSERT</span>
+				<br> Date:&nbsp;<span>INSERT</span>
+			</span>
+		</div>
+		<div id = "content">
+			<div id = "tableContainer">
+				<table>
+					<thead>
+					<tr>
+						<th class=number>HTML<br> Row #</th>
+						<th class=number>Left<br>Row #</th>
+						<th class=regularText>Left Text</th>
+						<th class=number>Right<br>Row #</th>
+						<th class=regularText>Right Text</th>
+						<th class=number>Confidence</th>
+					</tr>
+					</thead>
+					<div id="tbodyContainer">
+						<tbody>	
+							<tr class=levelOne onmouseover="this.style.backgroundColor='#8888FF'; updateD(1, 'YEE-Z', false)" onmouseout="this.style.backgroundColor=''" onclick="updateD(1, 'YEE-Z', true)">
+								<td>1</td>
+								<td>1</td>
+								<td>if(this.equals(that))</td>
+								<td>0</td>
+								<td></td>
+								<td>---</td>
+							</tr>
+							<tr onmouseover="this.className='highlight'; updateD(2, 'BEACH ALPHA', false)" onmouseout="this.className='normal'" onclick="updateD(2, 'BEACH ALPHA', true)">
+								<td>2</td>
+								<td>2</td>
+								<td>do something</td>
+								<td>1</td>
+								<td>do something</td>
+								<td>---</td>
+							</tr>
+							<tr onmouseover="this.className='highlight'; updateD(3, 'ALPHA', false)" onmouseout="this.className='normal'" onclick="updateD(3, 'ALPHA', true)">
+								<td>3</td>
+								<td>2</td>
+								<td></td>
+								<td>2</td>
+								<td>return</td>
+								<td>---</td>
+							</tr>
+						</tbody>
+					</div>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id = "sidebar">
+		<div id="top">
+			<table>
+			<tr><th class = "MainLink"><a>Main Page:</a></th></tr>
+			</table>
+			<table class="dropdownMenu" >
+				<tr>
+					<td>
+					<div id="sidebarDropDownMenu">	<!-- Main Links -->	
+						<span class="SecondaryHeading">
+						Filter Main Page:
+						
+						<div class="DropDownListContainer"> 
+						<ul>
+							<li><a onclick="infobarShowA()">SubFolder Comparisions</li>
+								<li><a onclick="infobarShowC()">Identical Files</li>
+								<li><a onclick="infobarShowD()">Different Files</li>
+								<li><a onclick="infobarShowC()">Unique to Left<br>...</li>
+								<li><a onclick="infobarShowD()">Unique to Right<br>...</li>
+						</ul>
+						</div>
+						</span>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div id="sidebarDropDownMenu">	<!-- Information Bar -->	
+						<span class="SecondaryHeading">
+						Information Bar
+						
+						<div class="DropDownListContainer"> 
+						<ul>
+							<li><a onclick="infobarShowA()">Statistics & Legend</li>
+							<li><a onclick="infobarShowB()">Script Description</li>
+							<li><a onclick="infobarShowC()">Comparision Statistics</li>
+							<li><a onclick="infobarShowD()">Line Comment Viewer</li>
+						</ul>
+						</div>
+						</span>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div id="sidebarDropDownMenu">		<!-- View Originals -->
+						<span class="SecondaryHeading">
+						View Originals:
+						<div class="DropDownListContainer">	
+						<ul>
+						<li><a onclick="infobarShowA()">Original Left</li>
+						<li><a onclick="infobarShowC()">Original Right</li>
+						</ul>
+						</div>
+						</span>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div id="sidebarDropDownMenu">	<!-- View Parent's Master -->
+						<ul>
+							<span class="SecondaryHeading">
+							View Parent Master Report
+							</span>
+						</ul>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div id="sidebarDropDownMenu">	<!-- View Comment File -->
+						<ul>
+							<span class="SecondaryHeading">
+							View Comment File
+							</span>
+						</ul>
+					</div>
+					</td>
+				</tr>		
+			</table>
+		</div>
+		<div id="bottom" onmouseout="infobarHover(false)" onmouseover="infobarHover(true)">
+			<span class=SecondaryHeading>
+				Information Bar:
+			</span>
+			<div id="InfoBar">
+				<div id="A">
+					<table class="statistics">
+						<tr><td colspan="2" style="text-align: center; font-size: 1.4em;">Statistics:</td></tr>	 
+						<tr><td style="width: 125px;"># of Differences</td>
+							<td>INSERT</td>
+						</tr>
+						<tr><td># of Singular Lines</td>
+							<td>INSERT</td>
+						</tr>
+						<tr><td># of Identical Lines</td>
+							<td>INSERT</td>
+						</tr>
+						<tr><td># of Lines in File A</td>
+							<td>INSERT</td>
+						</tr>
+						<tr><td># of Lines in File B</td>
+							<td>INSERT</td>
+						</tr>
+					</table>
+				</div>
+				<div id="B">
+					<span style="font-size: 1.2em">Script Description:</span>
+						<form name="FormDescription" id="FormDescription" onsubmit = "sendNsCommand('description', '\..', FormDescription.description)">
+						<textarea name="description" placeholder = "Insert Script Description" id="description" ></textarea>
+						<button>Submit</button>
+					</form>
+				</div>
+				<div id = "C">
+					It's C
+				</div>
+				<div id = "D">
+					<form name="formD" id="Row-Comment" onsubmit = "sendNsCommand('description', '\..', formD.Line_Number, formD.priority_number, formD.text)">
+					HTML Line: <span id = "LineNumber">&nbsp;</span>
+					<br>
+					<label>Priority Level: &nbsp;</label>
+						<select name = "priority_number">
+							<option value = "Default"></option>
+							<option value = "1">1</option>
+							<option value = "2">2</option>
+							<option value = "3">3</option>
+							<option value = "4">4</option>
+						</select> 
+					<br>Comment:
+					<br>
+						<textarea name="text" placeholder = "Insert Comments" id = "Comment-Text"></textarea>
+						<input type="hidden" name="Line Number" id="Line_Number"/>
+						<button>Submit</button>
+					</form>				
+				</div> 
+			</div> <!-- Info Bar -->
+		</div> <!-- bottom -->
+	</div> <!-- sidebar -->
+</div> <!-- Main -->
+</body>
+
+</html>

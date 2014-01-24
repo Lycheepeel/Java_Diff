@@ -1,0 +1,35 @@
+Single Line Comment Indicator		= //
+Multi Line Comment Start Indicator	= /*
+Multi Line Comment End Indicator	= */
+
+List of Strings To Validate:
+end if
+wait
+
+END LIST
+
+Keywords List A:		// Generally used to highlight logic keywords
+if
+else
+for
+while
+
+END LIST
+true
+false
+
+Keywords List B:		// Generally used to highlight Action
+
+
+END LIST
+
+Keywords List C:
+
+
+END LIST
+
+
+
+
+
+

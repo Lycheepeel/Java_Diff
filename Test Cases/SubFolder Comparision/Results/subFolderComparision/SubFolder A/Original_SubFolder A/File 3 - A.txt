@@ -1,0 +1,138 @@
+<script type="text/javascript">
+		var activeElement = "A";
+		var animationInProgress = false;
+		function hideInfoBar()
+		{
+			try
+			{
+				document.getElementById("A").style.visibility="hidden";
+				document.getElementById("B").style.visibility="hidden";
+				document.getElementById("C").style.visibility="hidden";
+				document.getElementById("D").style.visibility="hidden";
+			}
+			catch(err)
+			{
+				
+			}
+		};
+		function infobarShowA()
+		{
+			hideInfoBar();
+			document.getElementById("A").style.visibility="visible";
+			activeElement = "A";
+			console.log("active Element = A");
+			console.log(activeElement);
+		};
+		function infobarShowB()
+		{
+			hideInfoBar();
+			document.getElementById("B").style.visibility="visible";
+			activeElement = "B";
+			console.log("active Element = B");
+			console.log(activeElement);
+		};
+		function infobarShowC()
+		{
+			hideInfoBar();
+			document.getElementById("C").style.visibility="visible";
+			activeElement = "C";
+			console.log("active Element = C");
+			console.log(activeElement);
+		};
+		function infobarShowD()
+		{
+			hideInfoBar();
+			document.getElementById("D").style.visibility="visible";
+			activeElement = "D";
+			console.log("active Element = D");
+			console.log(activeElement);
+		};
+		
+		function animateInfoBar(targetSize, element)
+		{
+			animationInProgress = true;
+			var current = document.getElementById(element).style.width;
+			console.log(current);
+			console.log(parseInt(current));
+			var currentSize = parseInt(current);
+			var counter = 0;
+			if(targetSize < currentSize)
+			{
+				var interval = window.setInterval(function()
+				{
+					currentSize -= 10;
+					counter++;
+					document.getElementById(element).style.width = currentSize + 'px';
+					console.log("Animating from" + currentSize);
+					if(currentSize <= targetSize)
+					{
+						clearInterval(interval)
+					}
+					if(counter > 100)
+					{
+						clearInterval(interval)
+					}
+				}
+				,50);
+			}
+			else
+			{
+				var interval = window.setInterval(function()
+				{
+					currentSize += 10;
+					counter++;
+					document.getElementById(element).style.width = currentSize + 'px';
+					console.log("Animating from" + currentSize);
+					if(currentSize >= targetSize)
+					{
+						clearInterval(interval)
+					}
+					if(counter > 100)
+					{
+						clearInterval(interval)
+					}
+				}
+				,50);
+			}
+			animationInProgress = false;
+			counter = 0;
+		};
+		
+		function expandInfoBar()
+		{
+			//http://onwebdev.blogspot.com/2011/02/javascript-animations-without-jquery.html
+			document.getElementById("bottom").style.width = "310px";
+			if(animationInProgress == false)
+			{
+				//animateInfoBar(310, 'bottom');
+			}
+			
+		};
+		
+		function resetInfoBar()
+		{
+			document.getElementById("bottom").style.width="155px";
+			if(animationInProgress == false)
+			{
+				
+				//animateInfoBar(155, 'bottom');
+			}
+			hardCounted = false;
+			
+		};
+		
+		function infobarHover(boolean)
+		{
+			if(boolean == true)
+			{
+				if(activeElement == "D" || activeElement == "B" || activeElement == "C")
+				{
+					expandInfoBar();
+				}
+			}
+			else
+			{
+				resetInfoBar();
+			}
+		};
+	</script>

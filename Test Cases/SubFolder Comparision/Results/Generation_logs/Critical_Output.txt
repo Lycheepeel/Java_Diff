@@ -1,0 +1,3610 @@
+Critical_Output Log Initalized on: 2013/03/21 at 16:15:04 EDT
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:04 EDT
+Time Program has been running: 28ms
+
+LogBook Initalized
+Critical_Output Log Initalized
+Folder_Manipulation Log Initalized
+File_Manipulation Log Initalized
+Folder_Comparision Log Initalized
+File_Comparision Log Initalized
+HTML_Report Log Initalized
+Failure_Report Log Initalized
+Requested_Report Log Initalized
+Warning_Report Log Initalized
+Failure_Summary Log Initalized
+Warning_Summary Log Initalized
+Debug_Report Log Initalized
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:04 EDT
+Time Program has been running: 31ms
+
+Reading from console arguments: 
+Program will compare: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+And write the report contents into: C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results
+Looking for res Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer	...
+	Found: res
+Looking for HTML Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: HTML
+Looking for Settings Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: Settings
+Looking for comment.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for comment_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for global.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for Languages Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings	...
+	Found: Languages
+Looking for FileComp-Default.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel1.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel2.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel3.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-LanguageDefault.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:04 EDT
+Time Program has been running: 45ms
+
+Creating Destination Envrionment:
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\File_Reports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\Original_Version 1\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\Original_Version 2\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subReports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\tmp\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\comments\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:04 EDT
+Time Program has been running: 48ms
+
+Initalizing Settings
+Settings to be used:
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-Default.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.25
+		||	0.25
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	NULL
+	multiLineCommentStartIndicator	||	NULL
+	multiLineCommentEndIndicator	||	NULL
+	listOfStringsRequiringValidation	||	NULL
+	listOfKeywordsA	||	NULL
+	listOfKeywordsB	||	NULL
+	listOfKeywordsC	||	NULL
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 438ms
+
+Attempting to create the appropriate Destination Folders
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\Version 1\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\Version 2\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 440ms
+
+Creating a Folder Comparer Object between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 445ms
+
+Folder Comparer Object has returned without alarm
+Number of files in left Only: 	0
+Number of files in right Only: 	0
+ Number of files in both: 	8
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 445ms
+
+Beggining File Comparision Operations for the files found in both 
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 485ms
+
+Setting up the Environment to create a File Comparer Object for: "File 1.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 571ms
+
+Setting up the Environment to create a File Comparer Object for: "File 2.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 674ms
+
+Setting up the Environment to create a File Comparer Object for: "File 3.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 1035ms
+
+Setting up the Environment to create a File Comparer Object for: "File 4.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 1336ms
+
+Setting up the Environment to create a File Comparer Object for: "File 5.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:06 EDT
+Time Program has been running: 1621ms
+
+Setting up the Environment to create a File Comparer Object for: "SubFolder A" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\Difference_files\
+
+SubFolder A is a directory in both directories therefore adding it to the subDirectory List
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:06 EDT
+Time Program has been running: 1677ms
+
+Setting up the Environment to create a File Comparer Object for: "SubFolder B" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\Difference_files\
+
+SubFolder B is a directory in both directories therefore adding it to the subDirectory List
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:06 EDT
+Time Program has been running: 1740ms
+
+Setting up the Environment to create a File Comparer Object for: "SubFolder C" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\Difference_files\
+
+SubFolder C is a directory in both directories therefore adding it to the subDirectory List
+Creating File Reports for all Identical Files
+	Creating Report for: File 1.txt
+	Creating Report for: File 2.txt
+	Creating Report for: File 3.txt
+	Creating Report for: File 4.txt
+	Creating Report for: File 5.txt
+Creating File Reports for all Files unique to: Version 1
+Creating File Reports for all Files unique to: Version 2
+Moving File: File 1.txt to the original Files File Path
+Moving File: File 2.txt to the original Files File Path
+Moving File: File 3.txt to the original Files File Path
+Moving File: File 4.txt to the original Files File Path
+Moving File: File 5.txt to the original Files File Path
+Moving File: SubFolder A to the original Files File Path
+Moving File: SubFolder B to the original Files File Path
+Moving File: SubFolder C to the original Files File Path
+Moving File: File 1.txt to the original Files File Path
+Moving File: File 2.txt to the original Files File Path
+Moving File: File 3.txt to the original Files File Path
+Moving File: File 4.txt to the original Files File Path
+Moving File: File 5.txt to the original Files File Path
+Moving File: SubFolder A to the original Files File Path
+Moving File: SubFolder B to the original Files File Path
+Moving File: SubFolder C to the original Files File Path
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\Generation_logs
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:06 EDT
+Time Program has been running: 2224ms
+
+Reading from console arguments: 
+Program will compare: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A\
+And write the report contents into: C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A
+Looking for res Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer	...
+	Found: res
+Looking for HTML Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: HTML
+Looking for Settings Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: Settings
+Looking for comment.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for comment_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for global.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for Languages Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings	...
+	Found: Languages
+Looking for FileComp-Default.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel1.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel2.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel3.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-LanguageDefault.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:06 EDT
+Time Program has been running: 2230ms
+
+Creating Destination Envrionment:
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\File_Reports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\Original_SubFolder A\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\Original_SubFolder A\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\subReports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\tmp\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\comments\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:06 EDT
+Time Program has been running: 2232ms
+
+Initalizing Settings
+Settings to be used:
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel1.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.25
+		||	0.25
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel2.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	SimpleMatch
+		||	LinearMatch
+		||	ExponentialMatch
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.4
+		||	0.4
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	true
+	ignoreSingleLineComments	||	true
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel3.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	SimpleMatch
+		||	LinearMatch
+		||	ExponentialMatch
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.4
+		||	0.4
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	true
+	ignoreSingleLineComments	||	true
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	true
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel4.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.25
+		||	0.55
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	true
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel5.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+		||	LinearContains
+	weightingFactor	||	Array:double
+		||	0.1
+		||	0.1
+		||	0.3
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	true
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2492ms
+
+Attempting to create the appropriate Destination Folders
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\SubFolder A\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\SubFolder A\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2493ms
+
+Creating a Folder Comparer Object between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2496ms
+
+Folder Comparer Object has returned without alarm
+Number of files in left Only: 	0
+Number of files in right Only: 	0
+ Number of files in both: 	5
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2496ms
+
+Beggining File Comparision Operations for the files found in both 
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A
+
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2527ms
+
+Setting up the Environment to create a File Comparer Object for: "File 1 - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2603ms
+
+Setting up the Environment to create a File Comparer Object for: "File 2 - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2748ms
+
+Setting up the Environment to create a File Comparer Object for: "File 3 - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 3008ms
+
+Setting up the Environment to create a File Comparer Object for: "File 4 - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 3201ms
+
+Setting up the Environment to create a File Comparer Object for: "File 5 - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder A\Difference_files\
+
+File Comparision object has returned without alarm
+Creating File Reports for all Identical Files
+	Creating Report for: File 1 - A.txt
+	Creating Report for: File 2 - A.txt
+	Creating Report for: File 3 - A.txt
+	Creating Report for: File 4 - A.txt
+	Creating Report for: File 5 - A.txt
+Creating File Reports for all Files unique to: SubFolder A
+Creating File Reports for all Files unique to: SubFolder A
+Moving File: File 1 - A.txt to the original Files File Path
+Moving File: File 2 - A.txt to the original Files File Path
+Moving File: File 3 - A.txt to the original Files File Path
+Moving File: File 4 - A.txt to the original Files File Path
+Moving File: File 5 - A.txt to the original Files File Path
+Moving File: File 1 - A.txt to the original Files File Path
+Moving File: File 2 - A.txt to the original Files File Path
+Moving File: File 3 - A.txt to the original Files File Path
+Moving File: File 4 - A.txt to the original Files File Path
+Moving File: File 5 - A.txt to the original Files File Path
+Finishing off main report subFolders
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\Generation_logs
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 3887ms
+
+Reading from console arguments: 
+Program will compare: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\
+And write the report contents into: C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B
+Looking for res Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer	...
+	Found: res
+Looking for HTML Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: HTML
+Looking for Settings Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: Settings
+Looking for comment.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for comment_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for global.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for Languages Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings	...
+	Found: Languages
+Looking for FileComp-Default.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel1.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel2.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel3.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-LanguageDefault.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 3892ms
+
+Creating Destination Envrionment:
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\File_Reports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\Original_SubFolder B\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\Original_SubFolder B\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subReports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\tmp\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\comments\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 3894ms
+
+Initalizing Settings
+Settings to be used:
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel1.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.25
+		||	0.25
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel2.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	SimpleMatch
+		||	LinearMatch
+		||	ExponentialMatch
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.4
+		||	0.4
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	true
+	ignoreSingleLineComments	||	true
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel3.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	SimpleMatch
+		||	LinearMatch
+		||	ExponentialMatch
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.4
+		||	0.4
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	true
+	ignoreSingleLineComments	||	true
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	true
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel4.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.25
+		||	0.55
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	true
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel5.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+		||	LinearContains
+	weightingFactor	||	Array:double
+		||	0.1
+		||	0.1
+		||	0.3
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	true
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4118ms
+
+Attempting to create the appropriate Destination Folders
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\SubFolder B\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\SubFolder B\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4118ms
+
+Creating a Folder Comparer Object between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4121ms
+
+Folder Comparer Object has returned without alarm
+Number of files in left Only: 	0
+Number of files in right Only: 	0
+ Number of files in both: 	7
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4121ms
+
+Beggining File Comparision Operations for the files found in both 
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B
+
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4143ms
+
+Setting up the Environment to create a File Comparer Object for: "File 1 - B.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4218ms
+
+Setting up the Environment to create a File Comparer Object for: "File 2 - B.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4286ms
+
+Setting up the Environment to create a File Comparer Object for: "File 3 - B.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:09 EDT
+Time Program has been running: 4503ms
+
+Setting up the Environment to create a File Comparer Object for: "File 4 - B.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:10 EDT
+Time Program has been running: 6005ms
+
+Setting up the Environment to create a File Comparer Object for: "File 5 - B.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:10 EDT
+Time Program has been running: 6326ms
+
+Setting up the Environment to create a File Comparer Object for: "SubFolder B-A" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\Difference_files\
+
+SubFolder B-A is a directory in both directories therefore adding it to the subDirectory List
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:10 EDT
+Time Program has been running: 6419ms
+
+Setting up the Environment to create a File Comparer Object for: "SubFolder B-B" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\Difference_files\
+
+SubFolder B-B is a directory in both directories therefore adding it to the subDirectory List
+Creating File Reports for all Identical Files
+	Creating Report for: File 1 - B.txt
+	Creating Report for: File 2 - B.txt
+	Creating Report for: File 3 - B.txt
+	Creating Report for: File 4 - B.txt
+	Creating Report for: File 5 - B.txt
+Creating File Reports for all Files unique to: SubFolder B
+Creating File Reports for all Files unique to: SubFolder B
+Moving File: File 1 - B.txt to the original Files File Path
+Moving File: File 2 - B.txt to the original Files File Path
+Moving File: File 3 - B.txt to the original Files File Path
+Moving File: File 4 - B.txt to the original Files File Path
+Moving File: File 5 - B.txt to the original Files File Path
+Moving File: SubFolder B-A to the original Files File Path
+Moving File: SubFolder B-B to the original Files File Path
+Moving File: File 1 - B.txt to the original Files File Path
+Moving File: File 2 - B.txt to the original Files File Path
+Moving File: File 3 - B.txt to the original Files File Path
+Moving File: File 4 - B.txt to the original Files File Path
+Moving File: File 5 - B.txt to the original Files File Path
+Moving File: SubFolder B-A to the original Files File Path
+Moving File: SubFolder B-B to the original Files File Path
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\Generation_logs
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:11 EDT
+Time Program has been running: 7177ms
+
+Reading from console arguments: 
+Program will compare: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\\SubFolder B-A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\\SubFolder B-A\
+And write the report contents into: C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A
+Looking for res Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer	...
+	Found: res
+Looking for HTML Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: HTML
+Looking for Settings Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: Settings
+Looking for comment.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for comment_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for global.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for Languages Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings	...
+	Found: Languages
+Looking for FileComp-Default.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel1.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel2.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel3.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-LanguageDefault.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:11 EDT
+Time Program has been running: 7183ms
+
+Creating Destination Envrionment:
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\File_Reports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\Original_SubFolder B-A\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\Original_SubFolder B-A\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\subReports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\tmp\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\comments\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:11 EDT
+Time Program has been running: 7186ms
+
+Initalizing Settings
+Settings to be used:
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel1.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.25
+		||	0.25
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel2.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	SimpleMatch
+		||	LinearMatch
+		||	ExponentialMatch
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.4
+		||	0.4
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	true
+	ignoreSingleLineComments	||	true
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel3.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	SimpleMatch
+		||	LinearMatch
+		||	ExponentialMatch
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.4
+		||	0.4
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	true
+	ignoreSingleLineComments	||	true
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	true
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel4.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.25
+		||	0.55
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	true
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel5.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+		||	LinearContains
+	weightingFactor	||	Array:double
+		||	0.1
+		||	0.1
+		||	0.3
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	true
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7546ms
+
+Attempting to create the appropriate Destination Folders
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\SubFolder B-A\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\SubFolder B-A\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7547ms
+
+Creating a Folder Comparer Object between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-A
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7550ms
+
+Folder Comparer Object has returned without alarm
+Number of files in left Only: 	0
+Number of files in right Only: 	0
+ Number of files in both: 	5
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7550ms
+
+Beggining File Comparision Operations for the files found in both 
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-A
+
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7580ms
+
+Setting up the Environment to create a File Comparer Object for: "File 1 - B - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\\SubFolder B-A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\\SubFolder B-A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7650ms
+
+Setting up the Environment to create a File Comparer Object for: "File 2 - B - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\\SubFolder B-A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\\SubFolder B-A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7728ms
+
+Setting up the Environment to create a File Comparer Object for: "File 3 - B - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\\SubFolder B-A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\\SubFolder B-A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7998ms
+
+Setting up the Environment to create a File Comparer Object for: "File 4 - B - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\\SubFolder B-A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\\SubFolder B-A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 8190ms
+
+Setting up the Environment to create a File Comparer Object for: "File 5 - B - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\\SubFolder B-A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\\SubFolder B-A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-A\Difference_files\
+
+File Comparision object has returned without alarm
+Creating File Reports for all Identical Files
+	Creating Report for: File 1 - B - A.txt
+	Creating Report for: File 2 - B - A.txt
+	Creating Report for: File 3 - B - A.txt
+	Creating Report for: File 4 - B - A.txt
+	Creating Report for: File 5 - B - A.txt
+Creating File Reports for all Files unique to: SubFolder B-A
+Creating File Reports for all Files unique to: SubFolder B-A
+Moving File: File 1 - B - A.txt to the original Files File Path
+Moving File: File 2 - B - A.txt to the original Files File Path
+Moving File: File 3 - B - A.txt to the original Files File Path
+Moving File: File 4 - B - A.txt to the original Files File Path
+Moving File: File 5 - B - A.txt to the original Files File Path
+Moving File: File 1 - B - A.txt to the original Files File Path
+Moving File: File 2 - B - A.txt to the original Files File Path
+Moving File: File 3 - B - A.txt to the original Files File Path
+Moving File: File 4 - B - A.txt to the original Files File Path
+Moving File: File 5 - B - A.txt to the original Files File Path
+Finishing off main report subFolders
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\Generation_logs
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 8969ms
+
+Reading from console arguments: 
+Program will compare: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\\SubFolder B-B\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\\SubFolder B-B\
+And write the report contents into: C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B
+Looking for res Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer	...
+	Found: res
+Looking for HTML Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: HTML
+Looking for Settings Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: Settings
+Looking for comment.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for comment_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for global.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for Languages Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings	...
+	Found: Languages
+Looking for FileComp-Default.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel1.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel2.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel3.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-LanguageDefault.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 8977ms
+
+Creating Destination Envrionment:
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\File_Reports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\Original_SubFolder B-B\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\Original_SubFolder B-B\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\subReports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\tmp\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\comments\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 8980ms
+
+Initalizing Settings
+Settings to be used:
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel1.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.25
+		||	0.25
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel2.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	SimpleMatch
+		||	LinearMatch
+		||	ExponentialMatch
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.4
+		||	0.4
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	true
+	ignoreSingleLineComments	||	true
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel3.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	SimpleMatch
+		||	LinearMatch
+		||	ExponentialMatch
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.4
+		||	0.4
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	true
+	ignoreSingleLineComments	||	true
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	true
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel4.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.25
+		||	0.55
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	true
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel5.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+		||	LinearContains
+	weightingFactor	||	Array:double
+		||	0.1
+		||	0.1
+		||	0.3
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	true
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 9235ms
+
+Attempting to create the appropriate Destination Folders
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\SubFolder B-B\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\SubFolder B-B\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 9236ms
+
+Creating a Folder Comparer Object between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-B
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 9238ms
+
+Folder Comparer Object has returned without alarm
+Number of files in left Only: 	0
+Number of files in right Only: 	0
+ Number of files in both: 	5
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 9238ms
+
+Beggining File Comparision Operations for the files found in both 
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-B
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-B
+
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 9271ms
+
+Setting up the Environment to create a File Comparer Object for: "File 1 - B - B.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\\SubFolder B-B\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\\SubFolder B-B\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 9416ms
+
+Setting up the Environment to create a File Comparer Object for: "File 2 - B - B.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\\SubFolder B-B\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\\SubFolder B-B\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:14 EDT
+Time Program has been running: 9523ms
+
+Setting up the Environment to create a File Comparer Object for: "File 3 - B - B.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\\SubFolder B-B\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\\SubFolder B-B\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:14 EDT
+Time Program has been running: 9870ms
+
+Setting up the Environment to create a File Comparer Object for: "File 4 - B - B.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\\SubFolder B-B\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\\SubFolder B-B\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:14 EDT
+Time Program has been running: 10097ms
+
+Setting up the Environment to create a File Comparer Object for: "File 5 - B - B.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\\SubFolder B-B\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\\SubFolder B-B\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder B\subFolderComparision\SubFolder B-B\Difference_files\
+
+File Comparision object has returned without alarm
+Creating File Reports for all Identical Files
+	Creating Report for: File 1 - B - B.txt
+	Creating Report for: File 2 - B - B.txt
+	Creating Report for: File 3 - B - B.txt
+	Creating Report for: File 4 - B - B.txt
+	Creating Report for: File 5 - B - B.txt
+Creating File Reports for all Files unique to: SubFolder B-B
+Creating File Reports for all Files unique to: SubFolder B-B
+Moving File: File 1 - B - B.txt to the original Files File Path
+Moving File: File 2 - B - B.txt to the original Files File Path
+Moving File: File 3 - B - B.txt to the original Files File Path
+Moving File: File 4 - B - B.txt to the original Files File Path
+Moving File: File 5 - B - B.txt to the original Files File Path
+Moving File: File 1 - B - B.txt to the original Files File Path
+Moving File: File 2 - B - B.txt to the original Files File Path
+Moving File: File 3 - B - B.txt to the original Files File Path
+Moving File: File 4 - B - B.txt to the original Files File Path
+Moving File: File 5 - B - B.txt to the original Files File Path
+Finishing off main report subFolders
+Finishing off main report subFolders
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\Generation_logs
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 10797ms
+
+Reading from console arguments: 
+Program will compare: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\
+And write the report contents into: C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C
+Looking for res Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer	...
+	Found: res
+Looking for HTML Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: HTML
+Looking for Settings Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: Settings
+Looking for comment.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for comment_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for global.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for Languages Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings	...
+	Found: Languages
+Looking for FileComp-Default.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel1.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel2.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel3.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-LanguageDefault.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 10803ms
+
+Creating Destination Envrionment:
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\File_Reports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\Original_SubFolder C\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\Original_SubFolder C\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subReports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\tmp\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\comments\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 10805ms
+
+Initalizing Settings
+Settings to be used:
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel1.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.25
+		||	0.25
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel2.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	SimpleMatch
+		||	LinearMatch
+		||	ExponentialMatch
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.4
+		||	0.4
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	true
+	ignoreSingleLineComments	||	true
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel3.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	SimpleMatch
+		||	LinearMatch
+		||	ExponentialMatch
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.4
+		||	0.4
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	true
+	ignoreSingleLineComments	||	true
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	true
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel4.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.25
+		||	0.55
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	true
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel5.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+		||	LinearContains
+	weightingFactor	||	Array:double
+		||	0.1
+		||	0.1
+		||	0.3
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	true
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11086ms
+
+Attempting to create the appropriate Destination Folders
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\SubFolder C\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\SubFolder C\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11088ms
+
+Creating a Folder Comparer Object between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11090ms
+
+Folder Comparer Object has returned without alarm
+Number of files in left Only: 	0
+Number of files in right Only: 	0
+ Number of files in both: 	6
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11091ms
+
+Beggining File Comparision Operations for the files found in both 
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C
+
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11121ms
+
+Setting up the Environment to create a File Comparer Object for: "File 1 - C.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11199ms
+
+Setting up the Environment to create a File Comparer Object for: "File 2 - C.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11294ms
+
+Setting up the Environment to create a File Comparer Object for: "File 3 - C.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:16 EDT
+Time Program has been running: 11587ms
+
+Setting up the Environment to create a File Comparer Object for: "File 4 - C.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:16 EDT
+Time Program has been running: 11797ms
+
+Setting up the Environment to create a File Comparer Object for: "File 5 - C.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:16 EDT
+Time Program has been running: 12033ms
+
+Setting up the Environment to create a File Comparer Object for: "SubFolder C - A" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\Difference_files\
+
+SubFolder C - A is a directory in both directories therefore adding it to the subDirectory List
+Creating File Reports for all Identical Files
+	Creating Report for: File 1 - C.txt
+	Creating Report for: File 2 - C.txt
+	Creating Report for: File 3 - C.txt
+	Creating Report for: File 4 - C.txt
+	Creating Report for: File 5 - C.txt
+Creating File Reports for all Files unique to: SubFolder C
+Creating File Reports for all Files unique to: SubFolder C
+Moving File: File 1 - C.txt to the original Files File Path
+Moving File: File 2 - C.txt to the original Files File Path
+Moving File: File 3 - C.txt to the original Files File Path
+Moving File: File 4 - C.txt to the original Files File Path
+Moving File: File 5 - C.txt to the original Files File Path
+Moving File: SubFolder C - A to the original Files File Path
+Moving File: File 1 - C.txt to the original Files File Path
+Moving File: File 2 - C.txt to the original Files File Path
+Moving File: File 3 - C.txt to the original Files File Path
+Moving File: File 4 - C.txt to the original Files File Path
+Moving File: File 5 - C.txt to the original Files File Path
+Moving File: SubFolder C - A to the original Files File Path
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\Generation_logs
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12466ms
+
+Reading from console arguments: 
+Program will compare: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\\SubFolder C - A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\\SubFolder C - A\
+And write the report contents into: C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A
+Looking for res Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer	...
+	Found: res
+Looking for HTML Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: HTML
+Looking for Settings Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: Settings
+Looking for comment.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for comment_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for global.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for Languages Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings	...
+	Found: Languages
+Looking for FileComp-Default.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel1.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel2.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel3.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-LanguageDefault.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12472ms
+
+Creating Destination Envrionment:
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\File_Reports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\Original_SubFolder C - A\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\Original_SubFolder C - A\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subReports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\tmp\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\comments\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12474ms
+
+Initalizing Settings
+Settings to be used:
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel1.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.25
+		||	0.25
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel2.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	SimpleMatch
+		||	LinearMatch
+		||	ExponentialMatch
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.4
+		||	0.4
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	true
+	ignoreSingleLineComments	||	true
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel3.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	SimpleMatch
+		||	LinearMatch
+		||	ExponentialMatch
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.4
+		||	0.4
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	true
+	ignoreSingleLineComments	||	true
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	true
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel4.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.25
+		||	0.55
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	true
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel5.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+		||	LinearContains
+	weightingFactor	||	Array:double
+		||	0.1
+		||	0.1
+		||	0.3
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	true
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12766ms
+
+Attempting to create the appropriate Destination Folders
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\SubFolder C - A\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\SubFolder C - A\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12768ms
+
+Creating a Folder Comparer Object between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12772ms
+
+Folder Comparer Object has returned without alarm
+Number of files in left Only: 	0
+Number of files in right Only: 	0
+ Number of files in both: 	6
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12772ms
+
+Beggining File Comparision Operations for the files found in both 
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A
+
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12805ms
+
+Setting up the Environment to create a File Comparer Object for: "File 1 - C - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\\SubFolder C - A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\\SubFolder C - A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12882ms
+
+Setting up the Environment to create a File Comparer Object for: "File 2 - C - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\\SubFolder C - A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\\SubFolder C - A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12968ms
+
+Setting up the Environment to create a File Comparer Object for: "File 3 - C - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\\SubFolder C - A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\\SubFolder C - A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 13233ms
+
+Setting up the Environment to create a File Comparer Object for: "File 4 - C - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\\SubFolder C - A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\\SubFolder C - A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 13410ms
+
+Setting up the Environment to create a File Comparer Object for: "File 5 - C - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\\SubFolder C - A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\\SubFolder C - A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:18 EDT
+Time Program has been running: 13667ms
+
+Setting up the Environment to create a File Comparer Object for: "SubFolder C - A - A" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\\SubFolder C - A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\\SubFolder C - A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\Difference_files\
+
+SubFolder C - A - A is a directory in both directories therefore adding it to the subDirectory List
+Creating File Reports for all Identical Files
+	Creating Report for: File 1 - C - A.txt
+	Creating Report for: File 2 - C - A.txt
+	Creating Report for: File 3 - C - A.txt
+	Creating Report for: File 4 - C - A.txt
+	Creating Report for: File 5 - C - A.txt
+Creating File Reports for all Files unique to: SubFolder C - A
+Creating File Reports for all Files unique to: SubFolder C - A
+Moving File: File 1 - C - A.txt to the original Files File Path
+Moving File: File 2 - C - A.txt to the original Files File Path
+Moving File: File 3 - C - A.txt to the original Files File Path
+Moving File: File 4 - C - A.txt to the original Files File Path
+Moving File: File 5 - C - A.txt to the original Files File Path
+Moving File: SubFolder C - A - A to the original Files File Path
+Moving File: File 1 - C - A.txt to the original Files File Path
+Moving File: File 2 - C - A.txt to the original Files File Path
+Moving File: File 3 - C - A.txt to the original Files File Path
+Moving File: File 4 - C - A.txt to the original Files File Path
+Moving File: File 5 - C - A.txt to the original Files File Path
+Moving File: SubFolder C - A - A to the original Files File Path
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\Generation_logs
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:18 EDT
+Time Program has been running: 14210ms
+
+Reading from console arguments: 
+Program will compare: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\\SubFolder C - A\\SubFolder C - A - A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\\SubFolder C - A\\SubFolder C - A - A\
+And write the report contents into: C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A
+Looking for res Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer	...
+	Found: res
+Looking for HTML Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: HTML
+Looking for Settings Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res	...
+	Found: Settings
+Looking for comment.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for comment_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for difference_file_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for file_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for master_report_template.html within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for global.css within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\HTML
+	File Found
+Looking for Languages Directory within: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings	...
+	Found: Languages
+Looking for FileComp-Default.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel1.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel2.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-DefaultLevel3.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+Looking for FileComp-LanguageDefault.txt within the directory: C:\Users\ESTEYEE\workspace\Java_File_Comparer\res\Settings
+	File Found
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:18 EDT
+Time Program has been running: 14217ms
+
+Creating Destination Envrionment:
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\File_Reports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\Original_SubFolder C - A - A\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\Original_SubFolder C - A - A\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\subReports\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\tmp\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\comments\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:18 EDT
+Time Program has been running: 14219ms
+
+Initalizing Settings
+Settings to be used:
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel1.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.25
+		||	0.25
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel2.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	SimpleMatch
+		||	LinearMatch
+		||	ExponentialMatch
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.4
+		||	0.4
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	true
+	ignoreSingleLineComments	||	true
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel3.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	SimpleMatch
+		||	LinearMatch
+		||	ExponentialMatch
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.4
+		||	0.4
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	true
+	ignoreSingleLineComments	||	true
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	true
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel4.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+	weightingFactor	||	Array:double
+		||	0.2
+		||	0.25
+		||	0.55
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	true
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	false
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+*Settings.FileComparer	||	USER DEFNED CLASS
+fileName	||	FileComp-DefaultLevel5.txt
+numberOfLinesToItterateThrough	||	100
+lineDecrementFactor	||	0.995
+lineDecrementFactorStep	||	0.0050
+maxLineDecrementSteps	||	12.0
+minConfidence	||	0.55
+minConfidenceStep	||	0.025
+maxMinConfidenceStep	||	12.0
+warningFactor	||	0.25
+*Settings.FileComparer$StringMatch	||	USER DEFNED CLASS
+	algorithmsToUse	||	Array:class Utilities.StringComparisionAlgorithms$algorithmNames
+		||	LinearMatch
+		||	ExponentialMatch
+		||	SimpleContains
+		||	LinearContains
+	weightingFactor	||	Array:double
+		||	0.1
+		||	0.1
+		||	0.3
+		||	0.5
+	ignoreCase	||	true
+	minimumConsecutiveMatchingCharacters	||	3
+	ignoreComments	||	false
+	ignoreSingleLineComments	||	false
+	ignoreMultiLineComments	||	false
+	commentLineIndicator	||	 //
+	multiLineCommentStartIndicator	||	 /*
+	multiLineCommentEndIndicator	||	 */
+	listOfStringsRequiringValidation	||	Array:class java.lang.String
+		||	end if
+		||	wait
+	listOfKeywordsA	||	Array:class java.lang.String
+		||	if
+		||	else
+		||	for
+		||	while
+	listOfKeywordsB	||	Array:class java.lang.String
+	listOfKeywordsC	||	Array:class java.lang.String
+	ignoreNumbers	||	true
+	scrubString	||	true
+	ignoreWhiteSpace	||	true
+	languageType	||	DEFAULT
+*Settings.FileComparer$HTMLStringArray	||	USER DEFNED CLASS
+	thresholds	||	Array:int
+		||	990
+		||	800
+		||	650
+	highlightKeywordsA	||	true
+	highlightKeywordsB	||	true
+	highlightKeywordsC	||	true
+attemptToFixWarnings	||	true
+compareBothWays	||	true
+compareBothWaysUponWarning	||	true
+compareByInversion	||	true
+compareByInversionUponWarning	||	false
+itterationDepthLevel	||	1
+logPriority	||	2
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14523ms
+
+Attempting to create the appropriate Destination Folders
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\Difference_files\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\SubFolder C - A - A\
+We have already found the directory C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\SubFolder C - A - A\
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14524ms
+
+Creating a Folder Comparer Object between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A\SubFolder C - A - A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A\SubFolder C - A - A
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14527ms
+
+Folder Comparer Object has returned without alarm
+Number of files in left Only: 	0
+Number of files in right Only: 	0
+ Number of files in both: 	5
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14527ms
+
+Beggining File Comparision Operations for the files found in both 
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A\SubFolder C - A - A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A\SubFolder C - A - A
+
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14568ms
+
+Setting up the Environment to create a File Comparer Object for: "File 1 - C - A - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\\SubFolder C - A\\SubFolder C - A - A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\\SubFolder C - A\\SubFolder C - A - A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14696ms
+
+Setting up the Environment to create a File Comparer Object for: "File 2 - C - A - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\\SubFolder C - A\\SubFolder C - A - A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\\SubFolder C - A\\SubFolder C - A - A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14764ms
+
+Setting up the Environment to create a File Comparer Object for: "File 3 - C - A - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\\SubFolder C - A\\SubFolder C - A - A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\\SubFolder C - A\\SubFolder C - A - A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 15040ms
+
+Setting up the Environment to create a File Comparer Object for: "File 4 - C - A - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\\SubFolder C - A\\SubFolder C - A - A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\\SubFolder C - A\\SubFolder C - A - A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\Difference_files\
+
+File Comparision object has returned without alarm
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 15212ms
+
+Setting up the Environment to create a File Comparer Object for: "File 5 - C - A - A.txt" between the folders: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\\SubFolder C - A\\SubFolder C - A - A\
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\\SubFolder C - A\\SubFolder C - A - A\
+ Providing a destination path for their comparision as
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Results\subFolderComparision\SubFolder C\subFolderComparision\SubFolder C - A\subFolderComparision\SubFolder C - A - A\Difference_files\
+
+File Comparision object has returned without alarm
+Creating File Reports for all Identical Files
+	Creating Report for: File 1 - C - A - A.txt
+	Creating Report for: File 2 - C - A - A.txt
+	Creating Report for: File 3 - C - A - A.txt
+	Creating Report for: File 4 - C - A - A.txt
+	Creating Report for: File 5 - C - A - A.txt
+Creating File Reports for all Files unique to: SubFolder C - A - A
+Creating File Reports for all Files unique to: SubFolder C - A - A
+Moving File: File 1 - C - A - A.txt to the original Files File Path
+Moving File: File 2 - C - A - A.txt to the original Files File Path
+Moving File: File 3 - C - A - A.txt to the original Files File Path
+Moving File: File 4 - C - A - A.txt to the original Files File Path
+Moving File: File 5 - C - A - A.txt to the original Files File Path
+Moving File: File 1 - C - A - A.txt to the original Files File Path
+Moving File: File 2 - C - A - A.txt to the original Files File Path
+Moving File: File 3 - C - A - A.txt to the original Files File Path
+Moving File: File 4 - C - A - A.txt to the original Files File Path
+Moving File: File 5 - C - A - A.txt to the original Files File Path
+Finishing off main report subFolders
+Finishing off main report subFolders
+Finishing off main report subFolders
+Finishing off main report subFolders
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:20 EDT
+Time Program has been running: 15881ms
+
+TERMINATING PROGRAM 
+Rationale:	Program Succsesfully Completed
+ Number of Failures: 0
+ Number of warnings: 0
+  Number of warnings fixed: 0
+ Number of Files that are identical: 5
+ Number of Files that are different: 0
+User has requested to generate reports for specific scripts that the program did not find, please check for typos:
+ cex_change_anr_parameter.script

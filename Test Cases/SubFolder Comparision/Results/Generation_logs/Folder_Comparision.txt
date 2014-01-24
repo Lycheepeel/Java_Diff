@@ -1,0 +1,454 @@
+Folder_Comparision Log Initalized on: 2013/03/21 at 16:15:04 EDT
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 442ms
+
+******************************************
+Folder Comparer Object Created between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+******************************************
+Checking Requirements:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+Initilization Complete, all resources accounted for
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 443ms
+
+Obtaining an array containg the lsit of all the file names in directory
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	File 1.txt
+	File 2.txt
+	File 3.txt
+	File 4.txt
+	File 5.txt
+	SubFolder A
+	SubFolder B
+	SubFolder C
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+	File 1.txt
+	File 2.txt
+	File 3.txt
+	File 4.txt
+	File 5.txt
+	SubFolder A
+	SubFolder B
+	SubFolder C
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 443ms
+
+ Sorting Arrays, to perform binary search
+
+ Sorting Complete at2013/03/21 at 16:15:05 EDT
+ Now Performing a Binary Search for files in A, within B
+	File 1.txt ---> exists in both folders
+	File 2.txt ---> exists in both folders
+	File 3.txt ---> exists in both folders
+	File 4.txt ---> exists in both folders
+	File 5.txt ---> exists in both folders
+	SubFolder A ---> exists in both folders
+	SubFolder B ---> exists in both folders
+	SubFolder C ---> exists in both folders
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 444ms
+
+Binary Search for identical pairs complete
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2493ms
+
+******************************************
+Folder Comparer Object Created between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A
+******************************************
+Checking Requirements:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A
+Initilization Complete, all resources accounted for
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2494ms
+
+Obtaining an array containg the lsit of all the file names in directory
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A
+	File 1 - A.txt
+	File 2 - A.txt
+	File 3 - A.txt
+	File 4 - A.txt
+	File 5 - A.txt
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A
+	File 1 - A.txt
+	File 2 - A.txt
+	File 3 - A.txt
+	File 4 - A.txt
+	File 5 - A.txt
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2495ms
+
+ Sorting Arrays, to perform binary search
+
+ Sorting Complete at2013/03/21 at 16:15:07 EDT
+ Now Performing a Binary Search for files in A, within B
+	File 1 - A.txt ---> exists in both folders
+	File 2 - A.txt ---> exists in both folders
+	File 3 - A.txt ---> exists in both folders
+	File 4 - A.txt ---> exists in both folders
+	File 5 - A.txt ---> exists in both folders
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2495ms
+
+Binary Search for identical pairs complete
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4119ms
+
+******************************************
+Folder Comparer Object Created between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B
+******************************************
+Checking Requirements:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B
+Initilization Complete, all resources accounted for
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4119ms
+
+Obtaining an array containg the lsit of all the file names in directory
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B
+	File 1 - B.txt
+	File 2 - B.txt
+	File 3 - B.txt
+	File 4 - B.txt
+	File 5 - B.txt
+	SubFolder B-A
+	SubFolder B-B
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B
+	File 1 - B.txt
+	File 2 - B.txt
+	File 3 - B.txt
+	File 4 - B.txt
+	File 5 - B.txt
+	SubFolder B-A
+	SubFolder B-B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4120ms
+
+ Sorting Arrays, to perform binary search
+
+ Sorting Complete at2013/03/21 at 16:15:08 EDT
+ Now Performing a Binary Search for files in A, within B
+	File 1 - B.txt ---> exists in both folders
+	File 2 - B.txt ---> exists in both folders
+	File 3 - B.txt ---> exists in both folders
+	File 4 - B.txt ---> exists in both folders
+	File 5 - B.txt ---> exists in both folders
+	SubFolder B-A ---> exists in both folders
+	SubFolder B-B ---> exists in both folders
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4121ms
+
+Binary Search for identical pairs complete
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7548ms
+
+******************************************
+Folder Comparer Object Created between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-A
+******************************************
+Checking Requirements:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-A
+Initilization Complete, all resources accounted for
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7549ms
+
+Obtaining an array containg the lsit of all the file names in directory
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-A
+	File 1 - B - A.txt
+	File 2 - B - A.txt
+	File 3 - B - A.txt
+	File 4 - B - A.txt
+	File 5 - B - A.txt
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-A
+	File 1 - B - A.txt
+	File 2 - B - A.txt
+	File 3 - B - A.txt
+	File 4 - B - A.txt
+	File 5 - B - A.txt
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7549ms
+
+ Sorting Arrays, to perform binary search
+
+ Sorting Complete at2013/03/21 at 16:15:12 EDT
+ Now Performing a Binary Search for files in A, within B
+	File 1 - B - A.txt ---> exists in both folders
+	File 2 - B - A.txt ---> exists in both folders
+	File 3 - B - A.txt ---> exists in both folders
+	File 4 - B - A.txt ---> exists in both folders
+	File 5 - B - A.txt ---> exists in both folders
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7549ms
+
+Binary Search for identical pairs complete
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 9236ms
+
+******************************************
+Folder Comparer Object Created between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-B
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-B
+******************************************
+Checking Requirements:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-B
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-B
+Initilization Complete, all resources accounted for
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 9237ms
+
+Obtaining an array containg the lsit of all the file names in directory
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-B
+	File 1 - B - B.txt
+	File 2 - B - B.txt
+	File 3 - B - B.txt
+	File 4 - B - B.txt
+	File 5 - B - B.txt
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-B
+	File 1 - B - B.txt
+	File 2 - B - B.txt
+	File 3 - B - B.txt
+	File 4 - B - B.txt
+	File 5 - B - B.txt
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 9237ms
+
+ Sorting Arrays, to perform binary search
+
+ Sorting Complete at2013/03/21 at 16:15:13 EDT
+ Now Performing a Binary Search for files in A, within B
+	File 1 - B - B.txt ---> exists in both folders
+	File 2 - B - B.txt ---> exists in both folders
+	File 3 - B - B.txt ---> exists in both folders
+	File 4 - B - B.txt ---> exists in both folders
+	File 5 - B - B.txt ---> exists in both folders
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 9238ms
+
+Binary Search for identical pairs complete
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11088ms
+
+******************************************
+Folder Comparer Object Created between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C
+******************************************
+Checking Requirements:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C
+Initilization Complete, all resources accounted for
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11089ms
+
+Obtaining an array containg the lsit of all the file names in directory
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C
+	File 1 - C.txt
+	File 2 - C.txt
+	File 3 - C.txt
+	File 4 - C.txt
+	File 5 - C.txt
+	SubFolder C - A
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C
+	File 1 - C.txt
+	File 2 - C.txt
+	File 3 - C.txt
+	File 4 - C.txt
+	File 5 - C.txt
+	SubFolder C - A
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11090ms
+
+ Sorting Arrays, to perform binary search
+
+ Sorting Complete at2013/03/21 at 16:15:15 EDT
+ Now Performing a Binary Search for files in A, within B
+	File 1 - C.txt ---> exists in both folders
+	File 2 - C.txt ---> exists in both folders
+	File 3 - C.txt ---> exists in both folders
+	File 4 - C.txt ---> exists in both folders
+	File 5 - C.txt ---> exists in both folders
+	SubFolder C - A ---> exists in both folders
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11090ms
+
+Binary Search for identical pairs complete
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12768ms
+
+******************************************
+Folder Comparer Object Created between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A
+******************************************
+Checking Requirements:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A
+Initilization Complete, all resources accounted for
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12771ms
+
+Obtaining an array containg the lsit of all the file names in directory
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A
+	File 1 - C - A.txt
+	File 2 - C - A.txt
+	File 3 - C - A.txt
+	File 4 - C - A.txt
+	File 5 - C - A.txt
+	SubFolder C - A - A
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A
+	File 1 - C - A.txt
+	File 2 - C - A.txt
+	File 3 - C - A.txt
+	File 4 - C - A.txt
+	File 5 - C - A.txt
+	SubFolder C - A - A
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12771ms
+
+ Sorting Arrays, to perform binary search
+
+ Sorting Complete at2013/03/21 at 16:15:17 EDT
+ Now Performing a Binary Search for files in A, within B
+	File 1 - C - A.txt ---> exists in both folders
+	File 2 - C - A.txt ---> exists in both folders
+	File 3 - C - A.txt ---> exists in both folders
+	File 4 - C - A.txt ---> exists in both folders
+	File 5 - C - A.txt ---> exists in both folders
+	SubFolder C - A - A ---> exists in both folders
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12772ms
+
+Binary Search for identical pairs complete
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14524ms
+
+******************************************
+Folder Comparer Object Created between the folders:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A\SubFolder C - A - A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A\SubFolder C - A - A
+******************************************
+Checking Requirements:
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A\SubFolder C - A - A
+C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A\SubFolder C - A - A
+Initilization Complete, all resources accounted for
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14525ms
+
+Obtaining an array containg the lsit of all the file names in directory
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A\SubFolder C - A - A
+	File 1 - C - A - A.txt
+	File 2 - C - A - A.txt
+	File 3 - C - A - A.txt
+	File 4 - C - A - A.txt
+	File 5 - C - A - A.txt
+
+Listing Files in C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A\SubFolder C - A - A
+	File 1 - C - A - A.txt
+	File 2 - C - A - A.txt
+	File 3 - C - A - A.txt
+	File 4 - C - A - A.txt
+	File 5 - C - A - A.txt
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14526ms
+
+ Sorting Arrays, to perform binary search
+
+ Sorting Complete at2013/03/21 at 16:15:19 EDT
+ Now Performing a Binary Search for files in A, within B
+	File 1 - C - A - A.txt ---> exists in both folders
+	File 2 - C - A - A.txt ---> exists in both folders
+	File 3 - C - A - A.txt ---> exists in both folders
+	File 4 - C - A - A.txt ---> exists in both folders
+	File 5 - C - A - A.txt ---> exists in both folders
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14526ms
+
+Binary Search for identical pairs complete

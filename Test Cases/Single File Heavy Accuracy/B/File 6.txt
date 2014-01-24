@@ -1,0 +1,773 @@
+import java.io.*;
+import java.util.Scanner;
+import java.nio.*;
+
+/*
+ * TODO:
+ * 	http://www.hongkiat.com/blog/html5-editable-content/ -> Editable content
+ * 	modify and ouptut file method change it so that it's dynamic not static, incase we don't list the differences
+ */
+
+/*
+ * Comments:
+ * http://stackoverflow.com/questions/147181/how-can-i-convert-my-java-program-to-an-exe-file
+ * 
+ * http://www.html5rocks.com/en/features/storage
+ * http://www.diveintojavascript.com/tutorials/web-storage-tutorial-creating-an-address-book-application
+ * http://static.diveintojavascript.com/files/tutorials/web-storage-contacts/contacts.html
+ */
+
+
+public class HTMLmodificationV2
+{
+	private static boolean commentFileExist;
+	
+	private static String commentFolderPath;
+	private static final String COMMENT_FOLDER_NAME = "Comments";
+	
+	private static String mainFolderPath;
+	private static String mainFileName;
+	
+	private static String differenceFolderPath;
+	
+	private static String resourceFolderPath;
+	private static final String RESOURCE_FOLDER_NAME = "res";
+	
+	private static String leftComparisionName;
+	private static String leftComparisionFolderPath;
+	
+	private static String rightComparisionName;
+	private static String rightComparisionFolderPath;
+	
+	private static String destinationFileName;
+	
+	private static FileWriter fstream;
+	private static BufferedWriter out;
+	
+	private static int tablePriorityRow;
+	private static String TABLE_ID_NAME = "priority";
+	private static int tableTestCaseRow;
+	private static String TEST_CASE_ID_NAME = "testCase";
+	
+	private static final String COMMENT_FILE_BASE_NAME = "comment-";
+	private static int commentFileNumber;
+	
+	private static String uniqueID;
+	
+	private static Settings settings;
+	
+	private static final String[] RESOURCE_FILES =
+		{
+			"Settings.txt",
+			"CSS.txt",
+			"JavaScript-Storage.txt",
+			"Comment_Blank.html"
+		};
+	
+	private static final String DIFFERENCE_FOLDER_NAME = "Difference Reports";
+	
+	/*
+	 * Aguments:
+	 * 0 => the Main file path 
+	 * 1 => the Left Folder Name
+	 * 2 => the Right Folder Name
+	 * 
+	 */
+	
+	public static void main(String[] args)
+	{
+		settings = new Settings();
+		
+		tablePriorityRow = 1;
+		tableTestCaseRow = 1;
+		commentFileNumber = 1;
+		fstream = null;
+		out = null;
+		commentFileExist = false;
+		Scanner fileReader = null;
+		
+		mainFileName = args[0];
+		//mainFileName = args[0].substring(0, args[0].length() - 5) + "2" + ".html";
+				
+		leftComparisionName = args[1];
+		rightComparisionName = args[2];
+		
+		destinationFileName = args[3];
+		
+		TEST_CASE_ID_NAME += ("-" + destinationFileName);
+		TABLE_ID_NAME += ("-" + destinationFileName);
+		
+		File file = new File(args[0]);
+		try
+		{
+			if(file.exists())
+			{
+				System.out.println("Found Master File");
+			}
+		} 
+		catch(Exception e)
+		{
+			System.out.println("Cannot find master file");
+			System.exit(0);
+		}
+		
+		mainFolderPath = file.getParent().toString();
+		mainInitilizationCheck();
+		
+		try
+		{
+			fileReader = new Scanner(file);
+			fstream = new FileWriter("" + mainFolderPath + destinationFileName);
+			out = new BufferedWriter(fstream);
+			long startTime = System.currentTimeMillis();
+			while(readMasterFile(fileReader) == true)
+			{
+				//while(System.currentTimeMillis() - 100 > currentTime);
+			}
+			out.close();
+			System.out.println("Total Completion Time: " + (System.currentTimeMillis() - startTime) + "ms");
+		}
+		catch(Exception e)
+		{
+			System.out.println("File Exception Thrown, can't read file");
+			System.exit(0);
+		}
+		
+		System.exit((0));
+	}
+	
+	private static void generateUniqueID()
+	{
+		long time = System.currentTimeMillis();
+		if(mainFolderPath.length() > 5)
+			time = time % mainFolderPath.charAt((int)time%5)*1458;
+		else
+			time = time % mainFolderPath.charAt(0)*1458;
+		
+	}
+	
+	private static void mainInitilizationCheck()
+	{		
+		leftComparisionFolderPath = mainFolderPath + "\\" + leftComparisionName;
+		rightComparisionFolderPath = mainFolderPath + "\\" + rightComparisionName;
+		differenceFolderPath = mainFolderPath + "\\" + DIFFERENCE_FOLDER_NAME;
+		commentFolderPath = mainFolderPath + "\\" + COMMENT_FOLDER_NAME;
+		resourceFolderPath = mainFolderPath + "\\" + RESOURCE_FOLDER_NAME;
+		
+		if(mainFolderPath.charAt(mainFolderPath.length() - 1) != '\\')
+		{
+			mainFolderPath += "\\";
+		}
+		
+		System.out.println("****************************************************");
+		System.out.println("Master File: \t\t" + mainFileName);
+		System.out.println("Left Name: \t\t" + leftComparisionName);
+		System.out.println("Left Folder Path: \t" + leftComparisionFolderPath);
+		System.out.println("Right Name: \t\t" + rightComparisionName);
+		System.out.println("Right Folder Path: \t" + rightComparisionFolderPath);
+		System.out.println("Comment Folder Path: \t" + commentFolderPath);
+		generateCommentFolder();
+		System.out.println();
+		
+		if(checkRequiredFolders() == false)
+		{
+			System.out.println("Problem... not all the prerequisite folders were found");
+			System.exit(0);
+		}
+		System.out.println();
+		System.out.println("Checking Resource Files:");
+		checkResourceFolderFiles();
+		System.out.println();
+		System.out.println("Writting Path: \t\t" + mainFolderPath);
+		System.out.println("Naming File: \t\t" + destinationFileName);
+		System.out.println("****************************************************\n");
+		
+		
+	}
+	
+	private static boolean checkResourceFolderFiles()
+	{
+		boolean result = true;
+		for(int i = 0; i < RESOURCE_FILES.length; i++)
+		{
+			File file = new File(resourceFolderPath + "\\" + RESOURCE_FILES[i]);
+			boolean[] confirmation = {false, false};
+			if(file.exists() == true)
+			{
+				confirmation[0] = true;
+				if(file.isFile() == true)
+				{
+					confirmation[1] = true;
+				}
+			}
+			if(confirmation[0] == confirmation[1] && confirmation[0] == true)
+			{
+				System.out.println("\tFOUND " + RESOURCE_FILES[i]);
+			}
+			else
+			{
+				if(confirmation[0] == false)
+				{	
+					System.out.println("CANNOT FIND: " + RESOURCE_FILES[i]);
+				}
+				else
+				{
+					System.out.println(RESOURCE_FILES[i] + "IS NOT A FILE");
+				}
+				return false;
+			}
+		}
+		return result;
+	}
+	
+	private static boolean checkRequiredFolders()
+	{
+		File differencesFolder = new File(differenceFolderPath);
+		File leftFolder = new File(leftComparisionFolderPath);
+		File rightFolder = new File(rightComparisionFolderPath);
+		File resFolder = new File(resourceFolderPath);
+		boolean[] difference = {false, false};
+		boolean[] left = {false, false};
+		boolean[] right = {false, false};
+		boolean[] res = {false, false};
+		
+		try
+		{
+			if(differencesFolder.exists())
+			{
+				difference[0] = true;
+				if(differencesFolder.isDirectory())
+				{
+					difference[1] = true;
+				}
+			}
+			if(difference[0] == difference[1] && difference[0] == true)
+			{
+				System.out.println("Difference Folder \texists");
+			}
+			else
+			{
+				if(difference[0] == false)
+				{	
+					System.out.println("Difference Folder \tNOT EXIST");
+				}
+				else
+				{
+					System.out.println("Difference Folder \tNOT A FOLDER");
+				}
+				return false;
+			}
+			
+			if(leftFolder.exists())
+			{
+				left[0] = true;
+				if(leftFolder.isDirectory())
+				{
+					left[1] = true;
+				}
+			}
+			if(left[0] == left[1] && left[0] == true)
+			{
+				System.out.println("Left Folder \t\texists");
+			}
+			else
+			{
+				if(left[0] == false)
+				{	
+					System.out.println("Left Folder \t\tNOT EXIST");
+				}
+				else
+				{
+					System.out.println("Left Folder \t\tNOT A FOLDER");
+				}
+				return false;
+			}
+			
+			if(rightFolder.exists())
+			{
+				right[0] = true;
+				if(rightFolder.isDirectory())
+				{
+					right[1] = true;
+				}
+			}
+			if(right[0] == right[1] && right[0] == true)
+			{
+				System.out.println("Right Folder \t\texists");
+			}
+			else
+			{
+				if(right[0] == false)
+				{	
+					System.out.println("Right Folder \t\tNOT EXIST");
+				}
+				else
+				{
+					System.out.println("Right Folder \t\tNOT A FOLDER");
+				}
+				return false;
+			}
+			
+			if(resFolder.exists())
+			{
+				res[0] = true;
+				if(resFolder.isDirectory())
+				{
+					res[1] = true;
+				}
+			}
+			if(res[0] == res[1] && res[0] == true)
+			{
+				System.out.println("Resource Folder \texists");
+			}
+			else
+			{
+				if(res[0] == false)
+				{	
+					System.out.println("Resource Folder \tNOT EXIST");
+				}
+				else
+				{
+					System.out.println("Resource Folder \tNOT A FOLDER");
+				}
+				return false;
+			}
+			return true;
+		}
+		catch(Exception e)
+		{
+			return false;
+		}
+	}
+	
+	private static boolean generateCommentFolder()
+	{
+		boolean result = false;
+		if(commentFileExist == false)
+		{
+			//System.out.println("Checking for Comment Folder:");
+			File commentFolder = new File(commentFolderPath);
+			if(commentFolder.exists() == true)
+			{
+				if(commentFolder.isDirectory() == true)
+				{
+					result = true;
+					commentFileExist = true;
+					System.out.println("\t\t\tCOMMENT FOLDER ALREADY EXISTS");
+					return result;
+				}
+			}
+			if (result == false)
+			{
+				System.out.println("\t\t\tNO COMMENT FOLDER!!!");
+				try
+				{
+					if(commentFolder.mkdir() == true)
+					{
+						System.out.println("\t\t\tComment Folder successfully created");
+					}
+					
+				}
+				catch(Exception e)
+				{
+					
+				}
+			}
+		}
+		return false;
+	}
+	
+	private static void generateCommentFile(String name)
+	{
+		// Should just load a basic thing a blank template
+		String filePath = commentFolderPath + "\\" + name;
+		File file = new File(filePath);
+		File referenceFile = new File(resourceFolderPath + "\\" + RESOURCE_FILES[3]);
+		
+		Scanner scanner = null;
+		try 
+		{
+			scanner = new Scanner(referenceFile);
+		} 
+		catch (FileNotFoundException e1) 
+		{
+			System.out.println("Reference File for Comment Files Not Found");
+			return;
+		}
+		
+		if(file.exists() == true)
+		{	
+			if(settings.consoleDisplayFileModifications == true)
+				System.out.println("File " + name + " in the comments folder already exists");
+			
+			if(settings.consoleDisplayFileModifications == true)
+				System.out.println("\tDeleting File: " + filePath);
+			
+			file.delete();
+		}
+		
+		try
+		{
+			FileWriter commentFileWriter = new FileWriter("" + commentFolderPath + "\\comments-" + name +".html");
+			BufferedWriter commentOut = new BufferedWriter(commentFileWriter);
+			while(scanner.hasNext() == true)
+			{
+				String nextLine = scanner.nextLine();
+				String output = "";
+				if(nextLine.split("__").length > 1)
+				{
+					String[] dataSplit = nextLine.split("__");
+					if(dataSplit.length != 3)
+					{
+						if(settings.consoleDisplayFileModifications == true)
+						{
+							System.out.println("Syntax Problem Reading File: " + filePath + " In regards to the character ##");
+							System.out.println("\t" + nextLine);
+						}
+					}
+					else
+					{
+						if(dataSplit[2] == "UNIQUE-ID")
+						{
+							
+						}
+						else if(dataSplit[2] == "STORAGE-ID")
+						{
+							output += dataSplit[0];
+							output += COMMENT_FILE_BASE_NAME + name;
+							output += dataSplit[2];
+						}
+
+						
+					}
+					commentOut.write(output + "\n");
+				}
+				else if(nextLine.endsWith("$JAVA"))
+				{
+					if(nextLine.contains("$NAME"))
+					{
+						commentOut.write(name + " comments \n");
+					}
+				}
+				else
+				{
+					commentOut.write(nextLine + "\n");
+				}
+			}
+			commentFileNumber++;
+			commentOut.close();
+		}
+		catch(Exception e)
+		{
+			
+		}
+		
+		
+	}
+	
+	private static void generateHelpFiles()
+	{
+		
+	}
+	
+	private static void writeFile(String text)
+	{
+	    try 
+	    {
+			out.write(text + "\n");
+			if(settings.consoleDisplayWriteFile == true)
+				System.out.println("Writting: " + text);
+	    } 
+		catch (IOException e) 
+	    {
+			
+	    }
+	    try 
+	    {
+			out.flush();
+		} 
+	    catch (IOException e) 
+	    {
+			e.printStackTrace();
+		}
+	}
+	
+	private static boolean readFromPropertyFileAndWrite(int fileNumber)
+	{
+		boolean result = false;
+		File file = new File(resourceFolderPath + "\\" + RESOURCE_FILES[fileNumber]);
+		Scanner reader = null;
+		
+		try 
+		{
+			reader = new Scanner(file);
+		} 
+		catch (FileNotFoundException e) 
+		{
+			e.printStackTrace();
+			return false;
+		}
+		
+		while(reader.hasNext() == true)
+		{
+			writeFile(reader.nextLine());
+		}
+		
+		return result;
+	}
+	
+	private static boolean readMasterFile(Scanner scanner)
+	{
+		boolean result = false;
+		if(scanner.hasNext() == true)
+		{
+			result = true;
+			//System.out.println("File has a nextLine");
+		}
+		else
+		{
+			//System.out.println("No next lien in file");
+			return result;
+		}
+		//System.out.println("reading nextLine then");
+		String nextLine = scanner.nextLine();
+		
+		if(nextLine.endsWith("</title>"))
+		{
+			produceTitleTag();
+		}
+		if(nextLine.endsWith("</tr>"))
+		{
+			String[] split = nextLine.split("<td>");
+			if(split.length > 1)
+			{
+				//System.out.println("\t" + nextLine);
+				modifyAndOutputTable(split);
+			}
+			if(nextLine.endsWith("</th></tr>"))
+			{
+				modifyAndOutputHeader(nextLine);
+			}
+		}
+		else if(nextLine.endsWith("</body>"))
+		{
+			writeFile("<script>");
+			for(int i = 1; i < tablePriorityRow + 1; i++)
+			{
+				String output = "\t";
+				output += "getUserComments('";
+				output += TABLE_ID_NAME;
+				output += i;
+				output += "');";
+				writeFile(output);
+			}
+			writeFile("</script>");
+			
+			writeFile("<br><br>");
+			writeFile("<script>");
+			for(int i = 1; i < tableTestCaseRow + 1; i++)
+			{
+				String output = "\t";
+				output += "getUserComments('";
+				output += TEST_CASE_ID_NAME;
+				output += i;
+				output += "');";
+				writeFile(output);
+			}
+			writeFile("</script>");
+			writeFile("</body>");
+		}
+		else if(nextLine.endsWith("</p>"))
+		{
+			writeFile(nextLine);
+			writeFile("<p>Left Folder: " + leftComparisionName + "</p>");
+			writeFile("<p>Right Folder: " + rightComparisionName + "</p>");
+			writeFile("<p>Note: that the highest priority and Corresponding TOL Requirements columns are editable and the changes will be saved permanantly</p>");
+		}
+		else if(nextLine.endsWith("</head>"))
+		{
+			readFromPropertyFileAndWrite(2);
+			writeFile(nextLine);
+		}
+		else
+		{
+			
+			writeFile(nextLine);
+		}
+		return result;
+	}
+	
+	private static void produceTitleTag()
+	{
+		String output = "";
+		output += "<title>" + destinationFileName + "</title>";
+		writeFile(output);
+	}
+	
+	private static void modifyAndOutputHeader(String line)
+	{
+		//<th>Filename</th><th>Folder</th><th>Comparison result</th><th>Left Date</th><th>Right Date</th><th>Extension</th><th>Differences</th></tr>
+		// 0      1              2               3                         4                 5                    6                7
+		writeFile("<th>Filename</th><th>Folder</th><th>Comparison result</th><th>Highest Priority</th><th>Corresponding TOL Requirements</th><th>Extension</th><th>Differences</th><th>Comment File</th></tr>");
+	}
+	
+	private static String appendTableLineEnd(String output, String[] split)
+	{
+//		String result = "";
+//		result += split[split.length - 1].substring(0, split.length - 10);
+//		// Does not have differences
+//		if(split.length == 6)
+//		{
+//			
+//		}
+//		// Has Differences
+//		else if (split.length == 7)
+//		{
+//			String nameOnly = split[1].substring(0, split[1].length() - 5);
+//			result += ("<a href=\"" + nameOnly + ".html\">" + "Comments" +"</a></td>");
+//		}
+//		result += "</td></tr>";
+		
+		String result = "";
+		
+		//System.out.println("xxxx" + output);
+		if(output.length() > 10)
+			result += "<center>" + output.substring(0, output.length() - 10) + "</center>";
+		result += "</td><td>";
+		String nameOnly = split[1].substring(0, split[1].length() - 5);
+		if (split.length == 8)
+		{
+			result += ("<a href=" + COMMENT_FOLDER_NAME + "\\comments-" + nameOnly + ".html>" + "Comments" +"</a></td>");
+		}
+		if(split.length == 7)
+		{
+			result += "</td><td>";
+			
+			result += ("<a href=" + COMMENT_FOLDER_NAME + "\\\"comments-" + nameOnly + ".html\">" + "Comments" +"</a></td>");
+		}
+		result += "</td></tr>";
+		generateCommentFile(nameOnly);
+		return result;
+	}
+	
+	private static String createLink(String name, String parameters, String extension)
+	{
+		String nameOnly = name.substring(0,name.length() - 5);
+		if(parameters.equalsIgnoreCase("Text files are different</td>"))
+		{
+			return ("<a href=\"" + DIFFERENCE_FOLDER_NAME + "/" + nameOnly + ".html\">" + nameOnly +"</a></td>");
+			
+		}
+		else if(parameters.substring(0, 11).equalsIgnoreCase("Right only:"))
+		{
+			return ("<a href=\"" + rightComparisionName + "/" + nameOnly +"\">" + nameOnly +"</a></td>");
+			//return rightComparisionName;
+		}
+		else if(parameters.substring(0, 10).equalsIgnoreCase("Left only:"))
+		{
+			return ("<a href=\"" + leftComparisionName + "/" + nameOnly + "\">" + nameOnly +"</a></td>");
+			//return leftComparisionName;
+		}
+		else if(parameters.equalsIgnoreCase("Text files are identical</td>"))
+		{
+			return ("<a href=\"" + rightComparisionName + "/" + nameOnly + "\">" + nameOnly +"</a></td>");
+		}
+		return name; 
+	}
+	
+	private static String modifyComparisionResult(String result)
+	{
+		if(result.substring(0,11).equalsIgnoreCase("Right only:"))
+		{
+			return rightComparisionName + " only";
+		}
+		else if(result.substring(0, 10).equalsIgnoreCase("Left only:"))
+		{
+			return leftComparisionName + " only";
+		}
+		return result;
+	}
+	
+	private static void modifyAndOutputTable(String[] split)
+	{
+		String output = "";
+//		System.out.println(split.length);
+//		for(int i = 0; i < split.length; i++)
+//		{
+//			System.out.println(i +"\t" + split[i]);
+//		}
+		for(int i = 0; i < split.length - 1; i++)
+		{
+			//System.out.println(i + "\t" + split[i]);
+			//<th>Filename</th><th>Folder</th><th>Comparison result</th><th>Left Date</th><th>Right Date</th><th>Extension</th><th>Differences</th></tr>
+			// 0      1              2               3                         4                 5                    6                7          
+			switch(i)
+			{
+				//tr
+				case(0):
+				{
+					output += split[i];
+					break;
+				}
+				//The name of the file
+				case(1):
+				{
+					output += createLink(split[1], split[3], split[6]);
+					//output += split[i];
+					break;
+				}
+				//The subfolder
+				case(2):
+				{
+					output += split[i];
+					break;
+				}
+				//The comaprision Result
+				case(3):
+				{
+					output += modifyComparisionResult(split[i]);
+					//output += split[i];
+					break;
+				}
+				//What was originalyl leftdate (modified to highest priority)
+				case(4):
+				{
+					output += "<section id=\"" + TABLE_ID_NAME + tablePriorityRow + "\" contenteditable=\"true\" onkeyup=\"storeCommentData(this.id);\"><i><center></center></i></td></section>";
+					tablePriorityRow++;
+					break;
+				}
+				//What was originally rightdate (modified to test case)
+				case(5):
+				{
+					output += "<section id=\"" + TEST_CASE_ID_NAME + tableTestCaseRow + "\" contenteditable=\"true\" onkeyup=\"storeCommentData(this.id);\"><i><center>Editable</center></i></td></section>";
+					tableTestCaseRow++;
+					break;
+				}
+				//Extension
+				case(6):
+				{
+					output += split[i];
+					break;
+				}
+				//Possibly Differences
+				case(7):
+				{
+					output += split[i];
+					break;
+				}
+				default:
+				{
+					output += split[i];
+					break;
+				}
+			}
+			if(i != split.length - 1)
+			{
+				output += "<td>";
+			}
+		}
+		output += appendTableLineEnd(split[split.length - 1], split);
+				
+		writeFile(output);
+	}
+}

@@ -1,0 +1,55 @@
+Single Line Comment Indicator		= //
+Multi Line Comment Start Indicator	= /*
+Multi Line Comment End Indicator	= */
+Ignore White Space			= TRUE
+
+List of Strings To Validate:
+else
+else{
+else {
+else if
+else if{
+else if {
+
+END LIST
+
+Keywords List A:		// Generally used to highlight logic keywords
+auto
+static
+struct
+typedef
+union
+volatile
+
+END LIST
+
+Keywords List B:		// Generally used to highlight Action
+for
+while
+do
+if
+else
+sizeof
+switch
+break
+continue
+default
+
+END LIST
+
+Keywords List C:
+char
+int
+float
+long
+short
+unsigned
+signed
+
+END LIST
+
+
+
+
+
+

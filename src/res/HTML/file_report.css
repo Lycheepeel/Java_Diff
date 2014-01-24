@@ -1,0 +1,43 @@
+		#content table tr:nth-child(2n)
+		{
+			background: #E8EDFF;/*#D8DDEF; */
+		}
+		
+		#content td, #content th
+		{
+			border-left: 1px solid #556599;
+			border-top: 1px solid #556599;
+			border-bottom: 1px solid #556599;
+		}
+		
+		#sidebar #bottom #InfoBar #A
+		{
+			position: absolute;
+			width: inherit;
+			height: 100%;
+			visibility: hidden;
+		}
+		
+		#sidebar #bottom #InfoBar #B
+		{
+			position: absolute;
+			width: inherit;
+			height: 100%;
+			visibility: hidden;
+		}
+		
+		#sidebar #bottom #InfoBar #C
+		{
+			position: absolute;
+			width: inherit;
+			height: 100%;
+			visibility: hidden;
+		}
+		
+		#sidebar #bottom #InfoBar #D
+		{
+			position: absolute;
+			width: inherit;
+			height: 100%;
+			visibility: visible;
+		}

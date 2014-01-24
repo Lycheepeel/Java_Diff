@@ -1,0 +1,445 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>
+		
+	</title>
+	<link rel="stylesheet" type="text/css" href="global.css">
+	<link rel="stylesheet" type="text/css" href="file_report.css">
+	
+	<script type="text/javascript">
+		var activeElement = "D";
+		var animationInProgress = false;
+		function hideInfoBar()
+		{
+			try
+			{
+				document.getElementById("A").style.visibility="hidden";
+				document.getElementById("B").style.visibility="hidden";
+				document.getElementById("C").style.visibility="hidden";
+				document.getElementById("D").style.visibility="hidden";
+			}
+			catch(err)
+			{
+				
+			}
+		};
+		function infobarShowA()
+		{
+			hideInfoBar();
+			document.getElementById("A").style.visibility="visible";
+			activeElement = "A";
+			console.log("active Element = A");
+			console.log(activeElement);
+		};
+		function infobarShowB()
+		{
+			hideInfoBar();
+			document.getElementById("B").style.visibility="visible";
+			activeElement = "B";
+			console.log("active Element = B");
+			console.log(activeElement);
+		};
+		function infobarShowC()
+		{
+			hideInfoBar();
+			document.getElementById("C").style.visibility="visible";
+			activeElement = "C";
+			console.log("active Element = C");
+			console.log(activeElement);
+		};
+		function infobarShowD()
+		{
+			hideInfoBar();
+			document.getElementById("D").style.visibility="visible";
+			activeElement = "D";
+			console.log("active Element = D");
+			console.log(activeElement);
+		};
+		
+		function animateInfoBar(targetSize, element)
+		{
+			animationInProgress = true;
+			var current = document.getElementById(element).style.width;
+			console.log(current);
+			console.log(parseInt(current));
+			var currentSize = parseInt(current);
+			var counter = 0;
+			if(targetSize < currentSize)
+			{
+				var interval = window.setInterval(function()
+				{
+					currentSize -= 10;
+					counter++;
+					document.getElementById(element).style.width = currentSize + 'px';
+					console.log("Animating from" + currentSize);
+					if(currentSize <= targetSize)
+					{
+						clearInterval(interval)
+					}
+					if(counter > 100)
+					{
+						clearInterval(interval)
+					}
+				}
+				,50);
+			}
+			else
+			{
+				var interval = window.setInterval(function()
+				{
+					currentSize += 10;
+					counter++;
+					document.getElementById(element).style.width = currentSize + 'px';
+					console.log("Animating from" + currentSize);
+					if(currentSize >= targetSize)
+					{
+						clearInterval(interval)
+					}
+					if(counter > 100)
+					{
+						clearInterval(interval)
+					}
+				}
+				,50);
+			}
+			animationInProgress = false;
+			counter = 0;
+		};
+		
+		function expandInfoBar()
+		{
+			//http://onwebdev.blogspot.com/2011/02/javascript-animations-without-jquery.html
+			document.getElementById("bottom").style.width = "310px";
+			if(animationInProgress == false)
+			{
+				//animateInfoBar(310, 'bottom');
+			}
+			
+		};
+		
+		function resetInfoBar()
+		{
+			document.getElementById("bottom").style.width="155px";
+			if(animationInProgress == false)
+			{
+				
+				//animateInfoBar(155, 'bottom');
+			}
+			hardCounted = false;
+			
+		};
+		
+		function infobarHover(boolean)
+		{
+			if(boolean == true)
+			{
+				if(activeElement == "D" || activeElement == "B")
+				{
+					expandInfoBar();
+				}
+			}
+			else
+			{
+				resetInfoBar();
+			}
+		};
+	</script>
+	
+	<script type="text/javascript">
+		var hardCounted = false;
+		function updateD(lineNumber, text, boolean)
+		{
+			if(boolean == true)
+			{
+				document.getElementById("LineNumber").innerHTML = lineNumber;
+				document.getElementById("Comment-Text").value = text;
+				console.log("Click");
+				hardCounted = true;
+			}
+			else
+			{
+				if(hardCounted == false)
+				{
+					document.getElementById("LineNumber").innerHTML = lineNumber;
+					document.getElementById("Comment-Text").value = text;
+					console.log("Click");
+				}
+			}
+		};
+		
+		function resetD()
+		{
+			if(hardCounted == false)
+			{
+				document.getElementById("LineNumber").innerHTML = "";
+				document.getElementById("Comment-Text").value = "";
+				console.log("Clicky");
+			}
+		}
+	</script>
+</head>
+
+<body>	
+<div id = "main">
+	<div id = "center">
+		<div id = "topbar">
+			<span class="MainInfo">
+File 5 - B - A.txt
+			</span>
+			<span class="rightInfo">
+				Left Folder:&nbsp; <span class="float">Version 1</span>
+				<br> Right Folder:&nbsp; <span class = "float">Version 2</span>
+				<br> Date:&nbsp;<span>21/03/2013 at 04:15:11</span>
+			</span>
+		</div>
+		<div id = "content">
+			<div id = "tableContainer">
+				<table>
+					<thead>
+					<tr>
+						<th class=number>Line<br> #</th>
+						<th class=regularText>Line Text</th>
+					</tr>
+					</thead>
+					<div id="tbodyContainer">
+						<tbody>	
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(1,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(1,'TEXT GOES HERE', true)"><td>1</td><td>package Browser;</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(2,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(2,'TEXT GOES HERE', true)"><td>2</td><td>import java.awt.BorderLayout;   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(3,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(3,'TEXT GOES HERE', true)"><td>3</td><td>import java.awt.FlowLayout;   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(4,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(4,'TEXT GOES HERE', true)"><td>4</td><td>import java.awt.event.ItemEvent;   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(5,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(5,'TEXT GOES HERE', true)"><td>5</td><td>import java.awt.event.ItemListener;   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(6,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(6,'TEXT GOES HERE', true)"><td>6</td><td>  </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(7,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(7,'TEXT GOES HERE', true)"><td>7</td><td>import javax.swing.BorderFactory;   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(8,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(8,'TEXT GOES HERE', true)"><td>8</td><td>import javax.swing.JCheckBox;   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(9,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(9,'TEXT GOES HERE', true)"><td>9</td><td>import javax.swing.JComponent;   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(10,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(10,'TEXT GOES HERE', true)"><td>10</td><td>import javax.swing.JFrame;   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(11,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(11,'TEXT GOES HERE', true)"><td>11</td><td>import javax.swing.JPanel;   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(12,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(12,'TEXT GOES HERE', true)"><td>12</td><td>import javax.swing.SwingUtilities;</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(13,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(13,'TEXT GOES HERE', true)"><td>13</td><td></td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(14,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(14,'TEXT GOES HERE', true)"><td>14</td><td>import chrriis.common.UIUtils;</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(15,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(15,'TEXT GOES HERE', true)"><td>15</td><td>import chrriis.dj.nativeswing.swtimpl.NativeInterface;</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(16,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(16,'TEXT GOES HERE', true)"><td>16</td><td>import chrriis.dj.nativeswing.swtimpl.components.JWebBrowser;</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(17,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(17,'TEXT GOES HERE', true)"><td>17</td><td>import chrriis.dj.nativeswing.swtimpl.components.WebBrowserCommandEvent;</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(18,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(18,'TEXT GOES HERE', true)"><td>18</td><td>import chrriis.dj.nativeswing.swtimpl.components.WebBrowserAdapter;</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(19,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(19,'TEXT GOES HERE', true)"><td>19</td><td></td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(20,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(20,'TEXT GOES HERE', true)"><td>20</td><td>public class DjSwingWebBrowser</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(21,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(21,'TEXT GOES HERE', true)"><td>21</td><td>{</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(22,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(22,'TEXT GOES HERE', true)"><td>22</td><td>	public static JComponent createContent()</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(23,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(23,'TEXT GOES HERE', true)"><td>23</td><td>	{</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(24,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(24,'TEXT GOES HERE', true)"><td>24</td><td>		System.setProperty("nativeswing.swt.debug.device","true");</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(25,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(25,'TEXT GOES HERE', true)"><td>25</td><td>	    JPanel contentPane = new JPanel(new BorderLayout());   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(26,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(26,'TEXT GOES HERE', true)"><td>26</td><td>	    JPanel webBrowserPanel = new JPanel(new BorderLayout());   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(27,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(27,'TEXT GOES HERE', true)"><td>27</td><td>	    webBrowserPanel.setBorder(BorderFactory.createTitledBorder("Native Web Browser component"));   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(28,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(28,'TEXT GOES HERE', true)"><td>28</td><td>	    final JWebBrowser webBrowser = new JWebBrowser();</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(29,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(29,'TEXT GOES HERE', true)"><td>29</td><td>	    webBrowser.navigate("file:///C:/Users/ESTEYEE/Desktop/Testing_Main2/subReports/Difference%20Report-%2012.2%20vs.%2013a-differenceOnly.html");   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(30,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(30,'TEXT GOES HERE', true)"><td>30</td><td>	    webBrowserPanel.add(webBrowser, BorderLayout.CENTER);</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(31,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(31,'TEXT GOES HERE', true)"><td>31</td><td>	    webBrowser.setLocationBarVisible(false);</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(32,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(32,'TEXT GOES HERE', true)"><td>32</td><td>	    webBrowser.setButtonBarVisible(true);</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(33,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(33,'TEXT GOES HERE', true)"><td>33</td><td>	    webBrowser.setMenuBarVisible(false);</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(34,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(34,'TEXT GOES HERE', true)"><td>34</td><td>	    </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(35,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(35,'TEXT GOES HERE', true)"><td>35</td><td>	    /*</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(36,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(36,'TEXT GOES HERE', true)"><td>36</td><td>	     * I could think about using a function that uses the</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(37,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(37,'TEXT GOES HERE', true)"><td>37</td><td>	     * getHTMLContent() and then rePrint that entire thing with modification...</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(38,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(38,'TEXT GOES HERE', true)"><td>38</td><td>	     * we can get the HTML file Location using getResourceLocation() then use a scanner to modify </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(39,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(39,'TEXT GOES HERE', true)"><td>39</td><td>	     */</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(40,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(40,'TEXT GOES HERE', true)"><td>40</td><td>	    </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(41,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(41,'TEXT GOES HERE', true)"><td>41</td><td>	    /*</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(42,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(42,'TEXT GOES HERE', true)"><td>42</td><td>	     * http://www.html5rocks.com/en/tutorials/file/dndfiles/</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(43,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(43,'TEXT GOES HERE', true)"><td>43</td><td>	     * We can use the HTML5 api to allow for reading local files, to therefore read the files from a gigantic folder, these can be listed as plain text. </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(44,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(44,'TEXT GOES HERE', true)"><td>44</td><td>	     */</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(45,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(45,'TEXT GOES HERE', true)"><td>45</td><td>	    </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(46,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(46,'TEXT GOES HERE', true)"><td>46</td><td>	    webBrowser.addWebBrowserListener</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(47,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(47,'TEXT GOES HERE', true)"><td>47</td><td>	    (</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(48,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(48,'TEXT GOES HERE', true)"><td>48</td><td>	    	new WebBrowserAdapter()</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(49,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(49,'TEXT GOES HERE', true)"><td>49</td><td>	    	{</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(50,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(50,'TEXT GOES HERE', true)"><td>50</td><td>	    		public void recieveData(WebBrowserCommandEvent e)</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(51,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(51,'TEXT GOES HERE', true)"><td>51</td><td>	    		{</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(52,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(52,'TEXT GOES HERE', true)"><td>52</td><td>	    			String command = e.getCommand();</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(53,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(53,'TEXT GOES HERE', true)"><td>53</td><td>	    			Object[] parameters = e.getParameters();</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(54,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(54,'TEXT GOES HERE', true)"><td>54</td><td>	    		}</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(55,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(55,'TEXT GOES HERE', true)"><td>55</td><td>	    	}</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(56,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(56,'TEXT GOES HERE', true)"><td>56</td><td>	    );</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(57,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(57,'TEXT GOES HERE', true)"><td>57</td><td>	    </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(58,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(58,'TEXT GOES HERE', true)"><td>58</td><td>	    /*</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(59,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(59,'TEXT GOES HERE', true)"><td>59</td><td>	     *	Let's say that all of the data will be stored as a JSON.</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(60,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(60,'TEXT GOES HERE', true)"><td>60</td><td>	     *  The only time it will need to call up to the java program is if it's writting data therefore...</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(61,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(61,'TEXT GOES HERE', true)"><td>61</td><td>	     *  The first parameter will be what is it storing</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(62,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(62,'TEXT GOES HERE', true)"><td>62</td><td>	     *  	A Script Descrption or a Line Comment</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(63,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(63,'TEXT GOES HERE', true)"><td>63</td><td>	     *  If it's Script description</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(64,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(64,'TEXT GOES HERE', true)"><td>64</td><td>	     *  	Just one arg the description</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(65,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(65,'TEXT GOES HERE', true)"><td>65</td><td>	     *  If it's a line comment</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(66,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(66,'TEXT GOES HERE', true)"><td>66</td><td>	     *  	Argument will then be </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(67,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(67,'TEXT GOES HERE', true)"><td>67</td><td>	     *  		Line #</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(68,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(68,'TEXT GOES HERE', true)"><td>68</td><td>	     *  		Priority #</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(69,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(69,'TEXT GOES HERE', true)"><td>69</td><td>	     *  		Line Comment</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(70,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(70,'TEXT GOES HERE', true)"><td>70</td><td>	     *  		Date </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(71,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(71,'TEXT GOES HERE', true)"><td>71</td><td>	     */</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(72,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(72,'TEXT GOES HERE', true)"><td>72</td><td>	 </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(73,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(73,'TEXT GOES HERE', true)"><td>73</td><td>	    </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(74,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(74,'TEXT GOES HERE', true)"><td>74</td><td>	    contentPane.add(webBrowserPanel, BorderLayout.CENTER);   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(75,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(75,'TEXT GOES HERE', true)"><td>75</td><td>	    </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(76,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(76,'TEXT GOES HERE', true)"><td>76</td><td>	    System.out.println(webBrowser.getBrowserType() + " running: " + webBrowser.getBrowserVersion());</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(77,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(77,'TEXT GOES HERE', true)"><td>77</td><td>	    return contentPane; </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(78,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(78,'TEXT GOES HERE', true)"><td>78</td><td>	}</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(79,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(79,'TEXT GOES HERE', true)"><td>79</td><td>	</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(80,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(80,'TEXT GOES HERE', true)"><td>80</td><td>	public static void main(String[] args)</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(81,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(81,'TEXT GOES HERE', true)"><td>81</td><td>	{</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(82,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(82,'TEXT GOES HERE', true)"><td>82</td><td>		NativeInterface.open();</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(83,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(83,'TEXT GOES HERE', true)"><td>83</td><td>		UIUtils.setPreferredLookAndFeel();</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(84,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(84,'TEXT GOES HERE', true)"><td>84</td><td>		 SwingUtilities.invokeLater(new Runnable() {   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(85,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(85,'TEXT GOES HERE', true)"><td>85</td><td>		      public void run() {   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(86,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(86,'TEXT GOES HERE', true)"><td>86</td><td>		        JFrame frame = new JFrame("DJ Native Swing Test");   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(87,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(87,'TEXT GOES HERE', true)"><td>87</td><td>		        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(88,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(88,'TEXT GOES HERE', true)"><td>88</td><td>		        frame.getContentPane().add(createContent(), BorderLayout.CENTER);   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(89,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(89,'TEXT GOES HERE', true)"><td>89</td><td>		        frame.setSize(800, 600);   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(90,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(90,'TEXT GOES HERE', true)"><td>90</td><td>		        frame.setLocationByPlatform(true);   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(91,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(91,'TEXT GOES HERE', true)"><td>91</td><td>		        frame.setVisible(true);   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(92,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(92,'TEXT GOES HERE', true)"><td>92</td><td>		      }   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(93,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(93,'TEXT GOES HERE', true)"><td>93</td><td>		    });   </td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(94,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(94,'TEXT GOES HERE', true)"><td>94</td><td></td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(95,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(95,'TEXT GOES HERE', true)"><td>95</td><td>		NativeInterface.runEventPump();</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(96,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(96,'TEXT GOES HERE', true)"><td>96</td><td>	}</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(97,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(97,'TEXT GOES HERE', true)"><td>97</td><td>	</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(98,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(98,'TEXT GOES HERE', true)"><td>98</td><td>	private static void modifyHTMLFile()</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(99,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(99,'TEXT GOES HERE', true)"><td>99</td><td>	{</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(100,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(100,'TEXT GOES HERE', true)"><td>100</td><td>		</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(101,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(101,'TEXT GOES HERE', true)"><td>101</td><td>	}</td></tr>
+<tr onmouseover="this.style.backgroundColor='#8888FF'; updateD(102,'TEXT GOES HERE', false)"onmouseout="this.style.backgroundColor=''"onclick="updateD(102,'TEXT GOES HERE', true)"><td>102</td><td>}</td></tr>
+						</tbody>
+					</div>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id ="sidebar">
+		<div id="top">
+			<table>
+			<tr><th class = "MainLink"><a href="../SubFolder B-A.html">Main Page:</a></th></tr>
+			</table>
+			<table class="dropdownMenu" >
+				<tr>
+					<td>
+					<div id="sidebarDropDownMenu">		<!-- Main Links -->
+						<span class="SecondaryHeading">
+						Filter Main Page:
+						
+						<div class="DropDownListContainer"> 
+						<ul>
+						</ul>
+						</div>
+						</span>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div id="sidebarDropDownMenu">		<!-- Information Bar -->
+						<span class="SecondaryHeading">
+						Information Bar
+						
+						<div class="DropDownListContainer"> 
+						<ul>
+							<li><a onclick="infobarShowA()">Heading A</li>
+							<li><a onclick="infobarShowA()">Heading A</li>
+							<li><a onclick="infobarShowC()">Heading C</li>
+							<li><a onclick="infobarShowD()">Heading D</li>
+						</ul>
+						</div>
+						</span>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div id="sidebarDropDownMenu">		<!-- View Originals -->
+						<span class="SecondaryHeading">
+						View Originals:
+						<div class="DropDownListContainer">	
+						<ul>
+						<li><a onclick="infobarShowA()">Original Left</li>
+						<li><a onclick="infobarShowC()">Original Right</li>
+						</ul>
+						</div>
+						</span>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div id="sidebarDropDownMenu">	<!-- View Parent's Master -->
+						<ul>
+							<span class="SecondaryHeading">
+<a href="..\..\..\SubFolder B.html">View Parent's Master Report</a>
+							</span>
+						</ul>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div id="sidebarDropDownMenu">	<!-- View Comment File -->
+						<ul>
+							<span class="SecondaryHeading">
+<a href="..\comments\comments-File 5 - B - A.txt.html">View Comment File</a>
+							</span>
+						</ul>
+					</div>
+					</td>
+				</tr>		
+			</table>
+		</div>
+		<div id="bottom" onmouseout="infobarHover(false)" onmouseover="infobarHover(true)">
+			<span class=SecondaryHeading>
+				Information Bar:
+			</span>
+			<div id="InfoBar">
+				<div id="A">
+					<table class="statistics">
+						<tr><td colspan="2" style="text-align: center; font-size: 1.4em;">Statistics:</td></tr>	 
+						<tr><td style="width: 125px;"># of Identical Files</td>
+							<td> 100</td>
+						</tr>
+						<tr><td># of Different Files</td>
+							<td> 1000</td>
+						</tr>
+						<tr><td># of Unique Files in Folder A:</td>
+							<td> 1500</td>
+						</tr>
+						<tr><td># of Unique Files in Folder B:</td>
+							<td> 2000</td>
+						</tr>
+						<tr><td># of Warnings:</td>
+							<td> 2500</td>
+						</tr>
+						<tr><td># of Warnings Fixed:</td>
+							<td> 2500</td>
+						</tr>
+					</table>
+				</div>
+				<div id="B">
+					<span style="font-size: 1.2em">Script Description:</span>
+					<form name = "Form-Description" id="Form-Description">
+						<textarea name="description" placeholder = "Insert Script Description" id="description" ></textarea>
+						<button>Submit</button>
+					</form>
+				</div>
+				<div id = "C">
+					It's C
+				</div>
+				<div id = "D">
+					HTML Line: <span id = "LineNumber">&nbsp;</span> 
+					<br>Comment:
+					<br>
+					<form id="Row Comment">
+						<textarea id = "Comment-Text"></textarea>
+						<button>Submit</button>
+					</form>			
+				</div> 
+			</div> <!-- Info Bar -->
+		</div> <!-- bottom -->
+	</div> <!-- sidebar -->
+</div> <!-- Main -->
+</body>
+
+</html>

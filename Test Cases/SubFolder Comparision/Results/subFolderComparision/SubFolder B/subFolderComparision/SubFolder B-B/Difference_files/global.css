@@ -1,0 +1,484 @@
+		
+		a
+		{
+			cursor: pointer;
+			display: block;
+			color: #000000;
+		}
+		
+		#main 
+		{
+			margin: 0px 2.5%;
+			height: 95%; 
+			width: 92.5%; 
+			position: absolute;
+			font: 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+		}
+		
+		#sidebar
+		{
+			position: absolute;
+			width: 175px; 
+			height: 98.85%;
+			color: #0068D2; 
+		}
+		
+		#sidebar a
+		{
+			color: #0068D2;
+		}
+		
+		#sidebar a:hover
+		{
+			text-decoration: underline;
+			color: #944D94;
+		}
+		
+		#sidebar .SecondaryHeading
+		{
+			padding-top: 5px;
+			text-decoration: underline;
+			font-size: 16px;
+		}
+		
+		#sidebar ul
+		{
+			margin: 0px;
+			padding: 0px 15px;
+		}
+		
+		#sidebar ul.NoListType
+		{
+			list-style: none;
+			padding: 0px 10px;
+		}
+		
+		#sidebar table
+		{
+			border-collapse: collapse;
+			width: 95%;
+		}
+		
+		#sidebar table td
+		{
+			
+		}
+		
+		#sidebar #top
+		{
+			position: absolute;
+			height: 270.5px;
+			width: 150px;
+			top: 0;
+			padding-left: 15px;
+			padding-top: 10px;
+			padding-right: 10px;
+			border-style: dotted;
+			border-width: 2px;
+			border-color: #0068D2;
+			
+			background: #E2EAFB;
+			opacity: 95%;
+			
+		} 
+		
+		#sidebar #top th.MainLink
+		{
+			text-align: center;
+			text-decoration: underline;
+			font-size: 18px;
+			padding: 10px;
+			padding-bottom: 5px;
+		}
+		
+		#sidebar #top table.center
+		{
+			margin-top: 2px;
+		}
+		
+		#sidebar #top table tr td.center
+		{
+			text-align: center;
+		}
+		
+		#sidebar #bottom
+		{
+			position: absolute;
+			height: calc(100% - 330px);
+			height: -webkit-calc(100% - 330px); 
+			width: 155px;
+			top: 305px;
+			padding-left: 10px;
+			padding-top: 10px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+			border-style: dotted;
+			border-width: 2px;
+			border-color: #0068D2;
+			overflow-y:auto;
+			overflow-x:hidden;
+			z-index: 3;
+			background: #FFFFFF;
+		}
+		
+		#sidebar #bottom table.statistics tr td
+		{
+			padding: 5px;
+			padding-left: 15px;
+			border-bottom: 1px dashed;
+		}
+		
+		#sidebar #bottom #InfoBar
+		{
+			position: absolute;
+			padding: 0px 5px;
+			width: calc(100% - 25px);
+			width: -webkit-calc(100% - 25px);
+			height: calc(100% - 40px);
+			height: -webkit-calc(100% - 40px);
+			/* 
+			border-width: 1px;
+			border-style: dotted;
+			border-color: black;
+			*/
+		}
+		
+		#sidebar textarea
+		{
+			position: absolute;
+			resize: none;
+			width: 100%;
+		}
+		
+		#B textarea
+		{
+			height: calc(100% - 55px);
+			height: -webkit-calc(100% - 55px);
+		}
+		
+		#D textarea
+		{
+			height: calc(100% - 60px - 2em);
+			height: -webkit-calc(100% - 60px - 2em);
+		}
+		
+		#D select
+		{
+			position: absolute;
+			width: 40px;
+		}
+		
+		#sidebar #bottom #InfoBar button
+		{
+			height: 25px;
+			position: absolute;
+			bottom: 0px;
+			font-weight: bold;
+		}
+		
+		#sidebar #bottom #InfoBar #D #LineNumber
+		{
+			font-weight: bold;
+		}
+		
+		#sidebar #bottom #InfoBar #D #LineComment
+		{
+			
+		}
+		
+		/* 
+		 * End of Side Bar content:
+		 * Start of the center content
+		 */
+		
+		#center 
+		{
+			height: 98.85%; 
+			position: absolute;
+			margin: 0px 0px 0px 205px;
+			width: calc(100% - 215px); 
+			width: -webkit-calc(100% - 215px); 
+			width: -moz-calc(100% - 215px);
+			/*
+			border-style: dotted;
+			border-width: 1px;
+			border-color:black;
+			*/
+		}
+		
+		#topbar 
+		{
+			position: absolute;
+			height: 55px; 
+			/*width: 1218px;*/
+			width: 100%;
+			border-style: dashed;
+			border-width: 2px;
+			border-color:black;
+		}
+				
+		#topbar span.MainInfo
+		{
+			position: absolute;
+			top: 3.5px;
+			font-size: 35px;
+			/*font-family: Garamond;*/
+			padding-left: 15px;
+		}
+		
+		#topbar span.rightInfo
+		{
+			position: absolute;
+			float: left;
+			right: 0;
+			top: 0;
+			position: absolute;
+			padding: 2px 10px 0px 5px;
+			font-size: 13.5px;	
+		}
+		
+		#topbar span.rightInfo span.float
+		{
+			float: right;
+			right: 0px;
+		}
+		
+		#topbar span.rightInfo span
+		{
+			text-decoration: underline;
+		}
+		
+		#content
+		{
+			position:relative;
+			top: 75px;
+			width: 100%;
+			height: calc(100% - 75px);	/* Value is: 100% - the top offset of this container */
+			height: -webkit-calc(100% - 75px);
+			background: #F0F0F0;
+		}
+		
+		#tableContainer
+		{
+			overflow-y: scroll;
+			height: 100%;
+			width: 100%;
+		}
+		
+		#content table
+		{
+			width: 100%;
+			border-collapse:collapse;
+			background: #FFFFFF;
+			font-family: Verdana;
+		}
+		
+		#content table th
+		{
+			background: #8DA9FF;
+		}
+		
+		#content table thead tr td
+		{
+			padding-top: 7.5px;
+			padding-bottom: 7.5px;
+			border-left: 1px solid #556599;
+			border-top: 1px solid #556599;
+			border-bottom: 1px solid #556599;
+			height: 20px;
+			font-size: 18px;
+			font-weight: normal;
+			text-align: center;
+			text-decoration: underline;
+			font-family: Georgia;
+		}
+		
+		/*
+		 * The following contains the list of headers that will be in the table:
+		 * Note that each line SHOULD contain a min-width property as well, to ensure that upon resizing the two tables DO NOT misalign
+		 * 		There actual widths probably don't matter, as long as they are relative to one another, (eg. number < regular Text)
+		 * 
+		 */
+		
+		#content tr th.number 
+		{
+			width: 5%;
+			min-width: 85px;
+		}
+		
+		#content tr th.regularText
+		{
+			width: 35%;
+			min-width: 100px;
+		}
+		
+		#content tr th.smallText
+		{
+			width: 15%;
+			min-width: 90px;
+		}
+		
+		#content td, #content th
+		{
+			/*
+			border-left: 1px solid #556599;
+			border-top: 1px solid #556599;
+			border-bottom: 1px solid #556599;
+			*/
+			padding-top: 3px;
+			padding-right: 4px;
+			padding-bottom: 4px;
+			padding-left: 5px;
+			
+		}
+		
+		#content #tbodyContainer td a
+		{
+			display: block;
+			width: 100%;
+			height: 100%;
+			line-height: 100%;
+		}
+		
+		#content #tbodyContainer td a:hover
+		{
+			text-decoration: none;
+			color: #000000;
+		}
+		
+		#scrollbarTop
+		{
+			position: absolute;
+			background: #8DA9FF;
+			width: 16px;
+			height: 56px;
+			border-left: 1px solid #556599;
+			border-top: 1px solid #556599;
+			border-bottom: 2px solid #556599;
+			right: 0px;
+			top: 75px;
+			z-index: -1;
+		}
+		
+		.highlight 
+		{
+			background-color: #8888FF; 
+		}
+		.normal
+		{
+			
+		}
+		
+		#legend tr td
+		{
+			font-size: 10px;
+			border: 1px solid black;
+		}
+		
+		.levelOne{background-color:#FFFF66;}
+		.levelTwo{background-color:#FF9933;}
+		.levelThree{background-color:#F78181;}
+		.leftSingular{background-color:#D0D0D0;}
+		.rightSingular{background-color:#909090;}
+		
+		#sidebarDropDownMenu
+		{
+			position: relative;
+			border-color: #0068D2;
+			border-style: dotted;
+			border-width: 2px;
+			width: 175px;
+			left: -1px;
+			/*
+			border-top: solid;
+			border-bottom: solid;
+			*/
+		}
+		
+		#sidebarDropDownMenu a:hover span.dropLevelOne
+		{
+			left: 175px;
+			top: -2px;
+		}
+		
+		#sidebarDropDownMenu span.SecondaryHeading
+		{
+			display: block;
+			color: #0068D2;
+		}
+		
+		#sidebarDropDownMenu span.SecondaryHeading ul
+		{
+			color: #000000;
+			display: none;
+			padding: 0px;
+			margin: 0px;
+		}
+		
+		#sidebarDropDownMenu span.SecondaryHeading:hover 
+		{
+			cursor: pointer;
+		}
+		
+		#sidebarDropDownMenu span.SecondaryHeading:hover ul 		{
+			cursor: pointer;
+			opacity: 0.965;
+			display: block; 
+			position: absolute;
+			width: 158px;
+			right: 5px;
+			background: #E2EAFB;
+			color: #000000; 
+			font-size: 12px;
+			left: 175px;
+			top: -2px;
+		}
+		
+		#sidebarDropDownMenu li
+		{
+			list-style: none;
+			background: #E2EAFB;
+			border:dotted #0068D2; 
+			border-width: 2px;
+			padding: 1px 0px;
+			margin-bottom: 3px;
+			text-align: center;
+			display: block;
+			color: #000000;
+			font-size: 14px;
+		}
+		
+				
+		#sidebarDropDownMenu li a
+		{
+			color: #000000;
+		}
+		
+		table.dropdownMenu tr
+		{
+			position: relative;
+			top: 100px;
+			padding-top: 5px;
+		}
+		
+		#sidebar #top table
+		{
+			border-collapse: separate; !important;
+		}
+		
+		table.dropdownMenu
+		{
+			position: absolute; 
+			width: 179px;
+			padding-left: 0px;
+			left: -2px;
+			
+			border-spacing:0px 6px;
+		}
+		
+		table.dropdownMenu td
+		{
+			text-align: center;
+			margin-top: 5px;
+			background: #E2EAFB;
+		}

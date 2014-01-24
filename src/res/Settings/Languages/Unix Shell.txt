@@ -1,0 +1,49 @@
+Single Line Comment Indicator		= #
+Multi Line Comment Start Indicator	= NONE
+Multi Line Comment End Indicator	= NONE
+Ignore White Space			= TRUE
+
+List of Strings To Validate:
+else
+else{
+else {
+else if
+else if{
+else if {
+
+END LIST
+
+Keywords List A:		// Generally used to highlight logic keywords
+echo
+exit
+export
+wait
+
+END LIST
+
+Keywords List B:		// Generally used to highlight Action
+while
+do
+done
+case
+if
+then
+elif
+else
+fi
+continue
+return
+eval
+
+END LIST
+
+Keywords List C:
+
+
+END LIST
+
+
+
+
+
+

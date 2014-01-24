@@ -1,0 +1,1081 @@
+File_Comparision Log Initalized on: 2013/03/21 at 16:15:04 EDT
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 541ms
+
+File Comparision Object for:File 1.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+ Has been created!
+File Comparision Object for:File 1.txt
+ Has been initilized
+File Comparision Object for:File 1.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 545ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 622ms
+
+File Comparision Object for:File 2.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+ Has been created!
+File Comparision Object for:File 2.txt
+ Has been initilized
+File Comparision Object for:File 2.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 625ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 730ms
+
+File Comparision Object for:File 3.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+ Has been created!
+File Comparision Object for:File 3.txt
+ Has been initilized
+File Comparision Object for:File 3.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 737ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 1097ms
+
+File Comparision Object for:File 4.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+ Has been created!
+File Comparision Object for:File 4.txt
+ Has been initilized
+File Comparision Object for:File 4.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 1105ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 1390ms
+
+File Comparision Object for:File 5.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2
+ Has been created!
+File Comparision Object for:File 5.txt
+ Has been initilized
+File Comparision Object for:File 5.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:05 EDT
+Time Program has been running: 1399ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2578ms
+
+File Comparision Object for:File 1 - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A
+ Has been created!
+File Comparision Object for:File 1 - A.txt
+ Has been initilized
+File Comparision Object for:File 1 - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2582ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2657ms
+
+File Comparision Object for:File 2 - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A
+ Has been created!
+File Comparision Object for:File 2 - A.txt
+ Has been initilized
+File Comparision Object for:File 2 - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2660ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2815ms
+
+File Comparision Object for:File 3 - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A
+ Has been created!
+File Comparision Object for:File 3 - A.txt
+ Has been initilized
+File Comparision Object for:File 3 - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 2822ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 3063ms
+
+File Comparision Object for:File 4 - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A
+ Has been created!
+File Comparision Object for:File 4 - A.txt
+ Has been initilized
+File Comparision Object for:File 4 - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 3069ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 3256ms
+
+File Comparision Object for:File 5 - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder A
+ Has been created!
+File Comparision Object for:File 5 - A.txt
+ Has been initilized
+File Comparision Object for:File 5 - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:07 EDT
+Time Program has been running: 3264ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4195ms
+
+File Comparision Object for:File 1 - B.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B
+ Has been created!
+File Comparision Object for:File 1 - B.txt
+ Has been initilized
+File Comparision Object for:File 1 - B.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4197ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4258ms
+
+File Comparision Object for:File 2 - B.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B
+ Has been created!
+File Comparision Object for:File 2 - B.txt
+ Has been initilized
+File Comparision Object for:File 2 - B.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4261ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4335ms
+
+File Comparision Object for:File 3 - B.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B
+ Has been created!
+File Comparision Object for:File 3 - B.txt
+ Has been initilized
+File Comparision Object for:File 3 - B.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:08 EDT
+Time Program has been running: 4339ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:09 EDT
+Time Program has been running: 4550ms
+
+File Comparision Object for:File 4 - B.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B
+ Has been created!
+File Comparision Object for:File 4 - B.txt
+ Has been initilized
+File Comparision Object for:File 4 - B.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:09 EDT
+Time Program has been running: 4554ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:10 EDT
+Time Program has been running: 6075ms
+
+File Comparision Object for:File 5 - B.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B
+ Has been created!
+File Comparision Object for:File 5 - B.txt
+ Has been initilized
+File Comparision Object for:File 5 - B.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:10 EDT
+Time Program has been running: 6081ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7626ms
+
+File Comparision Object for:File 1 - B - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-A
+ Has been created!
+File Comparision Object for:File 1 - B - A.txt
+ Has been initilized
+File Comparision Object for:File 1 - B - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7628ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7700ms
+
+File Comparision Object for:File 2 - B - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-A
+ Has been created!
+File Comparision Object for:File 2 - B - A.txt
+ Has been initilized
+File Comparision Object for:File 2 - B - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7703ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7778ms
+
+File Comparision Object for:File 3 - B - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-A
+ Has been created!
+File Comparision Object for:File 3 - B - A.txt
+ Has been initilized
+File Comparision Object for:File 3 - B - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 7783ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 8045ms
+
+File Comparision Object for:File 4 - B - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-A
+ Has been created!
+File Comparision Object for:File 4 - B - A.txt
+ Has been initilized
+File Comparision Object for:File 4 - B - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 8049ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 8239ms
+
+File Comparision Object for:File 5 - B - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-A
+ Has been created!
+File Comparision Object for:File 5 - B - A.txt
+ Has been initilized
+File Comparision Object for:File 5 - B - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:12 EDT
+Time Program has been running: 8245ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 9334ms
+
+File Comparision Object for:File 1 - B - B.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-B
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-B
+ Has been created!
+File Comparision Object for:File 1 - B - B.txt
+ Has been initilized
+File Comparision Object for:File 1 - B - B.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:13 EDT
+Time Program has been running: 9337ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:14 EDT
+Time Program has been running: 9493ms
+
+File Comparision Object for:File 2 - B - B.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-B
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-B
+ Has been created!
+File Comparision Object for:File 2 - B - B.txt
+ Has been initilized
+File Comparision Object for:File 2 - B - B.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:14 EDT
+Time Program has been running: 9496ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:14 EDT
+Time Program has been running: 9585ms
+
+File Comparision Object for:File 3 - B - B.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-B
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-B
+ Has been created!
+File Comparision Object for:File 3 - B - B.txt
+ Has been initilized
+File Comparision Object for:File 3 - B - B.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:14 EDT
+Time Program has been running: 9598ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:14 EDT
+Time Program has been running: 9940ms
+
+File Comparision Object for:File 4 - B - B.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-B
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-B
+ Has been created!
+File Comparision Object for:File 4 - B - B.txt
+ Has been initilized
+File Comparision Object for:File 4 - B - B.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:14 EDT
+Time Program has been running: 9951ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:14 EDT
+Time Program has been running: 10139ms
+
+File Comparision Object for:File 5 - B - B.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder B\SubFolder B-B
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder B\SubFolder B-B
+ Has been created!
+File Comparision Object for:File 5 - B - B.txt
+ Has been initilized
+File Comparision Object for:File 5 - B - B.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:14 EDT
+Time Program has been running: 10144ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11170ms
+
+File Comparision Object for:File 1 - C.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C
+ Has been created!
+File Comparision Object for:File 1 - C.txt
+ Has been initilized
+File Comparision Object for:File 1 - C.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11173ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11265ms
+
+File Comparision Object for:File 2 - C.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C
+ Has been created!
+File Comparision Object for:File 2 - C.txt
+ Has been initilized
+File Comparision Object for:File 2 - C.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11268ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11346ms
+
+File Comparision Object for:File 3 - C.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C
+ Has been created!
+File Comparision Object for:File 3 - C.txt
+ Has been initilized
+File Comparision Object for:File 3 - C.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:15 EDT
+Time Program has been running: 11352ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:16 EDT
+Time Program has been running: 11643ms
+
+File Comparision Object for:File 4 - C.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C
+ Has been created!
+File Comparision Object for:File 4 - C.txt
+ Has been initilized
+File Comparision Object for:File 4 - C.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:16 EDT
+Time Program has been running: 11649ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:16 EDT
+Time Program has been running: 11842ms
+
+File Comparision Object for:File 5 - C.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C
+ Has been created!
+File Comparision Object for:File 5 - C.txt
+ Has been initilized
+File Comparision Object for:File 5 - C.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:16 EDT
+Time Program has been running: 11847ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12855ms
+
+File Comparision Object for:File 1 - C - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A
+ Has been created!
+File Comparision Object for:File 1 - C - A.txt
+ Has been initilized
+File Comparision Object for:File 1 - C - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12858ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12940ms
+
+File Comparision Object for:File 2 - C - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A
+ Has been created!
+File Comparision Object for:File 2 - C - A.txt
+ Has been initilized
+File Comparision Object for:File 2 - C - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 12942ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 13020ms
+
+File Comparision Object for:File 3 - C - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A
+ Has been created!
+File Comparision Object for:File 3 - C - A.txt
+ Has been initilized
+File Comparision Object for:File 3 - C - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 13024ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 13279ms
+
+File Comparision Object for:File 4 - C - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A
+ Has been created!
+File Comparision Object for:File 4 - C - A.txt
+ Has been initilized
+File Comparision Object for:File 4 - C - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:17 EDT
+Time Program has been running: 13283ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:18 EDT
+Time Program has been running: 13472ms
+
+File Comparision Object for:File 5 - C - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A
+ Has been created!
+File Comparision Object for:File 5 - C - A.txt
+ Has been initilized
+File Comparision Object for:File 5 - C - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:18 EDT
+Time Program has been running: 13477ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14669ms
+
+File Comparision Object for:File 1 - C - A - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A\SubFolder C - A - A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A\SubFolder C - A - A
+ Has been created!
+File Comparision Object for:File 1 - C - A - A.txt
+ Has been initilized
+File Comparision Object for:File 1 - C - A - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14674ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14739ms
+
+File Comparision Object for:File 2 - C - A - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A\SubFolder C - A - A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A\SubFolder C - A - A
+ Has been created!
+File Comparision Object for:File 2 - C - A - A.txt
+ Has been initilized
+File Comparision Object for:File 2 - C - A - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14741ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14810ms
+
+File Comparision Object for:File 3 - C - A - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A\SubFolder C - A - A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A\SubFolder C - A - A
+ Has been created!
+File Comparision Object for:File 3 - C - A - A.txt
+ Has been initilized
+File Comparision Object for:File 3 - C - A - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 14816ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 15076ms
+
+File Comparision Object for:File 4 - C - A - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A\SubFolder C - A - A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A\SubFolder C - A - A
+ Has been created!
+File Comparision Object for:File 4 - C - A - A.txt
+ Has been initilized
+File Comparision Object for:File 4 - C - A - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 15080ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 15258ms
+
+File Comparision Object for:File 5 - C - A - A.txt
+ within Directories: 
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 1\SubFolder C\SubFolder C - A\SubFolder C - A - A
+	C:\Users\ESTEYEE\workspace\Java_File_Comparer\Test Cases\SubFolder Comparision\Version 2\SubFolder C\SubFolder C - A\SubFolder C - A - A
+ Has been created!
+File Comparision Object for:File 5 - C - A - A.txt
+ Has been initilized
+File Comparision Object for:File 5 - C - A - A.txt
+ Starting the FileComparision algorithm
+Converting files into Strings
+	Conversion Succsseful
+Creating Index Matching Arrays: A -> B
+
+---------------------------
+Entry Time:	2013/03/21 at 16:15:19 EDT
+Time Program has been running: 15263ms
+
+Generating FileIndexMatch Array:
+	Index Matching Array Creation successfuly
+Generating HTML Output Array
+	FinishedGenerating HTML Output Array
+Files Are Identical

@@ -1,0 +1,1998 @@
+Debug_Report Log Initalized on: 2013/03/21 at 16:15:04 EDT
+
+DEBUG FOR:comments-File 1.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-SubFolder A.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-SubFolder B.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-SubFolder C.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 1.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 1.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 2.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 3.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 4.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 5.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 1 - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2 - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3 - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4 - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5 - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 1 - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 1 - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 2 - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2 - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 3 - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3 - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 4 - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4 - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 5 - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5 - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:SubFolder A.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder A-differenceOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder A-identicalOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder A-SubFolder AOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder A-SubFolder AOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:comments-File 1 - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2 - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3 - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4 - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5 - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-SubFolder B-A.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-SubFolder B-B.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 1 - B.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 1 - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 2 - B.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2 - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 3 - B.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3 - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 4 - B.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4 - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 5 - B.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5 - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 1 - B - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2 - B - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3 - B - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4 - B - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5 - B - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 1 - B - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 1 - B - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 2 - B - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2 - B - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 3 - B - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3 - B - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 4 - B - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4 - B - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 5 - B - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5 - B - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:SubFolder B-A.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder B-A-differenceOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder B-A-identicalOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder B-A-SubFolder B-AOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder B-A-SubFolder B-AOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:comments-File 1 - B - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2 - B - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3 - B - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4 - B - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5 - B - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 1 - B - B.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 1 - B - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 2 - B - B.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2 - B - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 3 - B - B.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3 - B - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 4 - B - B.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4 - B - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 5 - B - B.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5 - B - B.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:SubFolder B-B.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder B-B-differenceOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder B-B-identicalOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder B-B-SubFolder B-BOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder B-B-SubFolder B-BOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder B.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder B-differenceOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder B-identicalOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder B-SubFolder BOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder B-SubFolder BOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:comments-File 1 - C.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2 - C.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3 - C.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4 - C.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5 - C.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-SubFolder C - A.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 1 - C.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 1 - C.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 2 - C.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2 - C.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 3 - C.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3 - C.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 4 - C.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4 - C.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 5 - C.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5 - C.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 1 - C - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2 - C - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3 - C - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4 - C - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5 - C - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-SubFolder C - A - A.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 1 - C - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 1 - C - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 2 - C - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2 - C - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 3 - C - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3 - C - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 4 - C - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4 - C - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 5 - C - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5 - C - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 1 - C - A - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2 - C - A - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3 - C - A - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4 - C - A - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5 - C - A - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 1 - C - A - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 1 - C - A - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 2 - C - A - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 2 - C - A - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 3 - C - A - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 3 - C - A - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 4 - C - A - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 4 - C - A - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:File 5 - C - A - A.txt.html
+	---identicalFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+Viewing Originals
+DropDown List Container found in line
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:comments-File 5 - C - A - A.txt.html
+	---CommentFile
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+
+DEBUG FOR:SubFolder C - A - A.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder C - A - A-differenceOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder C - A - A-identicalOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder C - A - A-SubFolder C - A - AOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder C - A - A-SubFolder C - A - AOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder C - A.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder C - A-differenceOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder C - A-identicalOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder C - A-SubFolder C - AOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder C - A-SubFolder C - AOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder C.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder C-differenceOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder C-identicalOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder C-SubFolder COnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder C-SubFolder COnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder Comparision Test Case - 21 03 2013.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder Comparision Test Case - 21 03 2013-differenceOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder Comparision Test Case - 21 03 2013-identicalOnly.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder Comparision Test Case - 21 03 2013-Version 1Only.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom
+
+DEBUG FOR:SubFolder Comparision Test Case - 21 03 2013-Version 2Only.html
+	---MasterDocument
+DropDown List Container found in line
+	dd Main Links
+		whileloopbroken
+DropDown List Container found in line
+	Inside thy info bar
+		whileloopbroken
+DropDown List Container found in line
+DONE TOPBAR
+	Exited Sidebar Bottom

@@ -1,0 +1,43 @@
+*******************************
+     Performance Settings:
+*******************************
+
+Perform Subfolder Comparisions 			= TRUE
+Include Only Specific File Extensions		= FALSE
+File Extensions List				= java,
+	// The file extension list must be in csv format
+Itterate through File Comparision Settings	= TRUE
+
+***********************
+     Log Settings:
+***********************
+
+Generate Log Files				= TRUE
+Dispaly Time Stamp For All Events 		= TRUE
+
+File Comparision Log Priority			= 3
+
+Log all HTML lines that are written		= TRUE
+
+***********************************
+     Console Display Settings:
+***********************************
+
+Display Initilization Information		= TRUE
+Display Operational Information			= TRUE
+
+Display Folder Manipulation Information		= TRUE
+
+Display File Manipulation Information		= TRUE
+ Display File Comparision Information		= TRUE
+  Display File Comparision Output		= TRUE
+  Display File Comparision String Match Result	= TRUE
+  Display File Comparision String Matching	= TRUE
+
+Display Output Report Writing Information	= FALSE
+
+Display all Warnings Registered			= 
+ Display all Warning Reports			= 
+Display all Failures Registered			= 
+ Display all Failure REports			= 
+

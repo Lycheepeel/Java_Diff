@@ -1,0 +1,332 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>
+		
+	</title>
+	<link rel="stylesheet" type="text/css" href="global.css">
+	<link rel="stylesheet" type="text/css" href="master_report.css">
+	
+	<script type="text/javascript">
+		var activeElement = "D";
+		var animationInProgress = false;
+		function hideInfoBar()
+		{
+			try
+			{
+				document.getElementById("A").style.visibility="hidden";
+				document.getElementById("B").style.visibility="hidden";
+				document.getElementById("C").style.visibility="hidden";
+				document.getElementById("D").style.visibility="hidden";
+			}
+			catch(err)
+			{
+				
+			}
+		};
+		function infobarShowA()
+		{
+			hideInfoBar();
+			document.getElementById("A").style.visibility="visible";
+			activeElement = "A";
+			console.log("active Element = A");
+			console.log(activeElement);
+		};
+		function infobarShowB()
+		{
+			hideInfoBar();
+			document.getElementById("B").style.visibility="visible";
+			activeElement = "B";
+			console.log("active Element = B");
+			console.log(activeElement);
+		};
+		function infobarShowC()
+		{
+			hideInfoBar();
+			document.getElementById("C").style.visibility="visible";
+			activeElement = "C";
+			console.log("active Element = C");
+			console.log(activeElement);
+		};
+		function infobarShowD()
+		{
+			hideInfoBar();
+			document.getElementById("D").style.visibility="visible";
+			activeElement = "D";
+			console.log("active Element = D");
+			console.log(activeElement);
+		};
+		
+		function animateInfoBar(targetSize, element)
+		{
+			animationInProgress = true;
+			var current = document.getElementById(element).style.width;
+			console.log(current);
+			console.log(parseInt(current));
+			var currentSize = parseInt(current);
+			var counter = 0;
+			if(targetSize < currentSize)
+			{
+				var interval = window.setInterval(function()
+				{
+					currentSize -= 10;
+					counter++;
+					document.getElementById(element).style.width = currentSize + 'px';
+					console.log("Animating from" + currentSize);
+					if(currentSize <= targetSize)
+					{
+						clearInterval(interval)
+					}
+					if(counter > 100)
+					{
+						clearInterval(interval)
+					}
+				}
+				,50);
+			}
+			else
+			{
+				var interval = window.setInterval(function()
+				{
+					currentSize += 10;
+					counter++;
+					document.getElementById(element).style.width = currentSize + 'px';
+					console.log("Animating from" + currentSize);
+					if(currentSize >= targetSize)
+					{
+						clearInterval(interval)
+					}
+					if(counter > 100)
+					{
+						clearInterval(interval)
+					}
+				}
+				,50);
+			}
+			animationInProgress = false;
+			counter = 0;
+		};
+		
+		function expandInfoBar()
+		{
+			//http://onwebdev.blogspot.com/2011/02/javascript-animations-without-jquery.html
+			document.getElementById("bottom").style.width = "310px";
+			if(animationInProgress == false)
+			{
+				//animateInfoBar(310, 'bottom');
+			}
+			
+		};
+		
+		function resetInfoBar()
+		{
+			document.getElementById("bottom").style.width="155px";
+			if(animationInProgress == false)
+			{
+				
+				//animateInfoBar(155, 'bottom');
+			}
+			hardCounted = false;
+			
+		};
+		
+		function infobarHover(boolean)
+		{
+			if(boolean == true)
+			{
+				if(activeElement == "D" || activeElement == "B")
+				{
+					expandInfoBar();
+				}
+			}
+			else
+			{
+				resetInfoBar();
+			}
+		};
+	</script>
+	
+	<script type="text/javascript">
+		var hardCounted = false;
+		function updateD(lineNumber, text, boolean)
+		{
+			if(boolean == true)
+			{
+				document.getElementById("LineNumber").innerHTML = lineNumber;
+				document.getElementById("Comment-Text").value = text;
+				console.log("Click");
+				hardCounted = true;
+			}
+			else
+			{
+				if(hardCounted == false)
+				{
+					document.getElementById("LineNumber").innerHTML = lineNumber;
+					document.getElementById("Comment-Text").value = text;
+					console.log("Click");
+				}
+			}
+		};
+		
+		function resetD()
+		{
+			if(hardCounted == false)
+			{
+				document.getElementById("LineNumber").innerHTML = "";
+				document.getElementById("Comment-Text").value = "";
+				console.log("Clicky");
+			}
+		}
+	</script>
+</head>
+
+<body>	
+<div id = "main">
+	<div id = "center">
+		<div id = "topbar">
+			<span class="MainInfo">
+SubFolder C - A-SubFolder C - AOnly
+			</span>
+			<span class="rightInfo">
+				Left Folder:&nbsp; <span class="float">Version 1</span>
+				<br> Right Folder:&nbsp; <span class = "float">Version 2</span>
+				<br> Date:&nbsp;<span>21/03/2013 at 04:15:17</span>
+			</span>
+		</div>
+		<div id = "content">
+			<div id = "tableContainer">
+				<table>
+					<thead>
+					<tr>
+						<th class=regularText>File Name</th>
+						<th class=smallText>Comparision Result</th>
+						<th class=number># of<br> Differences</th>
+						<th class=number># of<br>Singular<br> Lines</th>
+						<th class=smallText>Corresponding TOL <br> Reuirements:</th>
+						<th class=number>Last Col</th>
+					</tr>
+					</thead>
+					<div id="tbodyContainer">
+						<tbody>	
+</tbody>
+					</div>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id ="sidebar">
+		<div id="top">
+			<table>
+			<tr><th class = "MainLink"><a href="../SubFolder C - A.html">Main Page:</a></th></tr>
+			</table>
+			<table class="dropdownMenu" >
+				<tr>
+					<td>
+					<div id="sidebarDropDownMenu">		<!-- Main Links -->
+						<span class="SecondaryHeading">
+						Filter Main Page:
+						
+						<div class="DropDownListContainer"> 
+						<ul>
+<li><a href="../subReports/SubFolder C - A-differenceOnly.html">Differences Only</a></li>
+<li><a href="../subReports/SubFolder C - A-identicalOnly.html">Identical Only</a></li>
+										<li><a>SubLink3</a></li>
+<li><a href="../subReports/SubFolder C - A-SubFolder C - AOnly.html">SubFolder C - A only</a></li>
+						</ul>
+						</div>
+						</span>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div id="sidebarDropDownMenu">		<!-- Information Bar -->
+						<span class="SecondaryHeading">
+						Information Bar
+						
+						<div class="DropDownListContainer"> 
+						<ul>
+							<li><a onclick="infobarShowA()">Heading A</li>
+							<li><a onclick="infobarShowA()">Heading A</li>
+							<li><a onclick="infobarShowC()">Heading C</li>
+							<li><a onclick="infobarShowD()">Heading D</li>
+						</ul>
+						</div>
+						</span>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div id="sidebarDropDownMenu">	<!-- View Parent's Master -->
+						<ul>
+							<span class="SecondaryHeading">
+<a href="..\..\SubFolder C.html">View Parent's Master Report</a>
+							</span>
+						</ul>
+					</div>
+					</td>
+				</tr>	
+			</table>
+		</div>
+		<div id="bottom" onmouseout="infobarHover(false)" onmouseover="infobarHover(true)">
+			<span class=SecondaryHeading>
+				Information Bar:
+			</span>
+			<div id="InfoBar">
+				<div id="A">
+					<table class="statistics">
+						<tr><td colspan="2" style="text-align: center; font-size: 1.4em;">Statistics:</td></tr>
+						<tr><td style="width: 125px;"># of Distinct Files</td>
+							<td>5</td>
+						</tr>	 
+						<tr><td># of Identical Files</td>
+							<td>5</td>
+						</tr>
+						<tr><td># of Different Files</td>
+							<td>0</td>
+						</tr>
+						<tr><td># of Unique Files in Folder A:</td>
+							<td>0</td>
+						</tr>
+						<tr><td># of Unique Files in Folder B:</td>
+							<td>0</td>
+						</tr>
+						<tr><td># of Warnings:</td>
+							<td>0</td>
+						</tr>
+						<tr><td># of Warnings Fixed:</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+				<div id="B">
+					<span style="font-size: 1.2em">Script Description:</span>
+					<form name = "Form-Description" id="Form-Description">
+						<textarea name="description" placeholder = "Insert Script Description" id="description" ></textarea>
+						<button>Submit</button>
+					</form>
+				</div>
+				<div id = "C">
+					Row Colour Legend:
+					<table id = legend>
+							<tr class = "levelOne"><td>Warning Found During Computation, Program Believes is corrected</td></tr>
+							<tr class = "levelTwo"><td>Warning Found During Computation, Program Could not satisfy correction requirements</td></tr>
+							<tr><td>File never triggered a warning</td></tr>
+					</table>
+				</div>
+				<div id = "D">
+					<form name="formD" id="Row-Comment" onsubmit = "sendNsCommand('#COMMAND NAME#', '#FILE NAME#', formD.Line_Number, formD.priority_number, formD.text)">
+					Script Name: 
+					<br> <span id = "LineNumber">&nbsp;</span> <br>
+						<textarea name="text" placeholder = "Insert Comments" id = "Comment-Text"></textarea>
+						<button>Submit</button>
+					</form>
+				</div> 
+			</div> <!-- Info Bar -->
+		</div> <!-- bottom -->
+	</div> <!-- sidebar -->
+</div> <!-- Main -->
+</body>
+
+</html>

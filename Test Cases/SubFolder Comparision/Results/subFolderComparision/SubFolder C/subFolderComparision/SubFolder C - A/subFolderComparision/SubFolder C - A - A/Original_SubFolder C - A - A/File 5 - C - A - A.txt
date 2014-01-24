@@ -1,0 +1,102 @@
+package Browser;
+import java.awt.BorderLayout;   
+import java.awt.FlowLayout;   
+import java.awt.event.ItemEvent;   
+import java.awt.event.ItemListener;   
+  
+import javax.swing.BorderFactory;   
+import javax.swing.JCheckBox;   
+import javax.swing.JComponent;   
+import javax.swing.JFrame;   
+import javax.swing.JPanel;   
+import javax.swing.SwingUtilities;
+
+import chrriis.common.UIUtils;
+import chrriis.dj.nativeswing.swtimpl.NativeInterface;
+import chrriis.dj.nativeswing.swtimpl.components.JWebBrowser;
+import chrriis.dj.nativeswing.swtimpl.components.WebBrowserCommandEvent;
+import chrriis.dj.nativeswing.swtimpl.components.WebBrowserAdapter;
+
+public class DjSwingWebBrowser
+{
+	public static JComponent createContent()
+	{
+		System.setProperty("nativeswing.swt.debug.device","true");
+	    JPanel contentPane = new JPanel(new BorderLayout());   
+	    JPanel webBrowserPanel = new JPanel(new BorderLayout());   
+	    webBrowserPanel.setBorder(BorderFactory.createTitledBorder("Native Web Browser component"));   
+	    final JWebBrowser webBrowser = new JWebBrowser();
+	    webBrowser.navigate("file:///C:/Users/ESTEYEE/Desktop/Testing_Main2/subReports/Difference%20Report-%2012.2%20vs.%2013a-differenceOnly.html");   
+	    webBrowserPanel.add(webBrowser, BorderLayout.CENTER);
+	    webBrowser.setLocationBarVisible(false);
+	    webBrowser.setButtonBarVisible(true);
+	    webBrowser.setMenuBarVisible(false);
+	    
+	    /*
+	     * I could think about using a function that uses the
+	     * getHTMLContent() and then rePrint that entire thing with modification...
+	     * we can get the HTML file Location using getResourceLocation() then use a scanner to modify 
+	     */
+	    
+	    /*
+	     * http://www.html5rocks.com/en/tutorials/file/dndfiles/
+	     * We can use the HTML5 api to allow for reading local files, to therefore read the files from a gigantic folder, these can be listed as plain text. 
+	     */
+	    
+	    webBrowser.addWebBrowserListener
+	    (
+	    	new WebBrowserAdapter()
+	    	{
+	    		public void recieveData(WebBrowserCommandEvent e)
+	    		{
+	    			String command = e.getCommand();
+	    			Object[] parameters = e.getParameters();
+	    		}
+	    	}
+	    );
+	    
+	    /*
+	     *	Let's say that all of the data will be stored as a JSON.
+	     *  The only time it will need to call up to the java program is if it's writting data therefore...
+	     *  The first parameter will be what is it storing
+	     *  	A Script Descrption or a Line Comment
+	     *  If it's Script description
+	     *  	Just one arg the description
+	     *  If it's a line comment
+	     *  	Argument will then be 
+	     *  		Line #
+	     *  		Priority #
+	     *  		Line Comment
+	     *  		Date 
+	     */
+	 
+	    
+	    contentPane.add(webBrowserPanel, BorderLayout.CENTER);   
+	    
+	    System.out.println(webBrowser.getBrowserType() + " running: " + webBrowser.getBrowserVersion());
+	    return contentPane; 
+	}
+	
+	public static void main(String[] args)
+	{
+		NativeInterface.open();
+		UIUtils.setPreferredLookAndFeel();
+		 SwingUtilities.invokeLater(new Runnable() {   
+		      public void run() {   
+		        JFrame frame = new JFrame("DJ Native Swing Test");   
+		        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   
+		        frame.getContentPane().add(createContent(), BorderLayout.CENTER);   
+		        frame.setSize(800, 600);   
+		        frame.setLocationByPlatform(true);   
+		        frame.setVisible(true);   
+		      }   
+		    });   
+
+		NativeInterface.runEventPump();
+	}
+	
+	private static void modifyHTMLFile()
+	{
+		
+	}
+}

@@ -1,0 +1,16 @@
+public class Hello
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Hello World!");
+		if(args.length == 0)
+		{
+			System.out.println("Good bye Cruel World...");
+		}
+		else
+		{
+			System.out.println("Ok... now this is awkward...);
+		}
+		System.exit(0);
+	}
+}

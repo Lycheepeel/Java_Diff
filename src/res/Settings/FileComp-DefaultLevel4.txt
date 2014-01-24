@@ -1,0 +1,74 @@
+File Comparer Settings:
+
+START:
+Itteration Count 			= 100		// Describes how many lines ahead the program will look: 
+							// Requirement: Value > 0
+
+Line Decrement Factor 			= 0.995		// Describes the factor a line match score will be multiplied by, for each line it is offSet by:
+							// Requirement: 0 < Value < 1.0
+
+Line Decrement Step	 		= 0.005		// Describes the decrement that the program will modify the Line Decrement Factor, for each itteration of a File Comparision Object, that produces a warning Flag
+
+Line Decrement Max Steps		= 12		// Describes the maximum number of times we'll decrement the lineDecrement Steps
+
+Warning Factor				= 0.25		// Describes the percentage of singular lines in reference to the longest File that the output must be composed of to produce a warning flag
+							// Example: 	If File A, has 40 lines and File B has 60 Lines, the reference poitn will be 60 lines
+							// 		If he warning flag is set to 0.5; (50%)
+							// 		If the Output has 30 singular lines, it will raise the warning flag since (60 * 0.5 = 30)
+
+Minimum Confidence Factor		= 0.55		// Describes the minimum confidence level a match must make, for it to be considered aligned
+
+
+Minimum Confidence Step			= 0.025		// Describes the increment that the program will modify the minimum confidence, for each itteration of a file comparision object that produces a warning flag.
+
+Minimum Confidence Max Step		= 12		// Describes the maximum number of times we'll decrement the lineDecrement Steps
+
+Itteration Depth Level			= 1		// Describes the level of depth that the program will attempt to solve warnings, The number describes the dimension that the program will attempt to solve it
+							// Dimension meaning: If the depth level is set to 1: 
+							//	that means that the program will itterate through one parameter (say lineDecrementFactors), until it reaches it's end then reset to the initial state
+							//	It will then itterate through another paramter (say min confidence step), until it reaches it's end then reset to the intial state
+							// Say we were instead to set the dimension level to 2:
+							//	That measnt hat the proram will itterate through the first parameter (say, line decrement factor) until it reaches it's end, then it will itterate through the 2nd parameter until it's end
+							// 	It will then reset it's settings, and then start with another parameter, and itterate through it then another. This way you have incremented two parameters through one check.
+
+Itteration Process			= Ideal		// Describes the Manner by which the program will change it's settings in an attempt to solve Warnings:
+							//	The way of computing the methods, can be described using vector calculus, and will be described in the pdf (In many cases if you are unsure, quick or ideal or quick will be the best)
+							//	The Methods are listed below in order of Complexity (as the most time being complete, and theleast beign quick)
+							//	Complete:	It will check the entirety of the space, along all possible paths. 
+							// 	Thorough: 	It will check the entirety of the space.
+							//	Ideal:		It will go along one criteria, thoroughly, find the best result, then itterate through that thoroughly, than find the next best result, and itterate through it throughouly.
+							//	Quick:		It will attempt to approximate the best point using this method, before proceedign to the next criteria (this method is rather newtonian in the approximation)
+
+Always Compare Both Ways		= TRUE		// This will force the program to compare File B -> File A, the structure of the program, the point of reference is important
+ Compare Both Ways On Warning		= TRUE		// Force the program to compare both ways only upon warnings Overided if above is true
+Always Compare From Bottom of Page	= TRUE		// This will force the program to start the reference from the bottom of the file as well as the top.
+ Compare From Bottom On warning		= TRUE		// This will force the program to comapre from the bottom up only upon warnings. Overided if above is true
+
+
+String Matching Properties:
+Scrub Comments				= TRUE
+Ignore Case				= TRUE
+Ignore WhiteSpace			= TRUE		 
+Ignore Comments				= FALSE	
+ Ignore Single Line Comments		= FALSE
+ Ignore Multi Line Comments		= TRUE
+Ignore Numbers				= FALSE
+
+Minimum # Of Consecutive Characters	= 3
+
+Validate Lines Containing Only Keywords	= TRUE
+
+Language Type				= DEFAULT
+String Algorithms to Use:		= LinearMatch:0.2 & ExponentialMatch:0.25 & SimpleContains:0.55
+
+END STRING MATCHING PROPERTIES:
+HTML Output Properties:
+Highlight KeywordsA			= TRUE
+Highlight KeywordsB			= TRUE
+Highlight KeywordsC			= TRUE
+
+Thresholds:				= 990,800,650
+
+END HTML OUTPUT PROPERTIES
+
+END HTML OUTPUT PROPERTIES

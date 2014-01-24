@@ -1,0 +1,110 @@
+
+import java.io.File;
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+
+public class LogBook 
+{
+	public static Log[] logBook = null;
+	public static String logFolderPath = null;
+	private static Date date = null;
+	private static DateFormat dateFormat = null;
+	
+	private static boolean initialized = false;
+	private static long programStartTime = 0;
+	
+	public static void initalizeLogBook(String logFolderPathInput, long programStartTimeInput)
+	{
+		initialized= true;
+		logFolderPath = logFolderPathInput;
+		
+		programStartTime = programStartTimeInput;
+		
+		logBook = new Log[Log.logType.values().length];
+		
+		for(int i = 0; i < logBook.length; i++)
+		{
+			logBook[i] = new Log(logFolderPath, Log.logType.values()[i]);
+		}
+		getLog(Log.logType.Critical_Output).writeToLog("LogBook Initalized", true);
+		for(int i = 0; i < logBook.length; i++)
+		{
+			getLog(Log.logType.Critical_Output).writeToLog(logBook[i].getType().toString() + " Log Initalized");
+		}
+	}
+	
+	public static boolean isInitialized()
+	{
+		return initialized;      
+	}
+	
+	public static String getTimeStamp()
+	{
+		date = new Date();
+		dateFormat = new SimpleDateFormat("yyyy/MM/dd 'at' HH:mm:ss z");
+		
+		if(initialized == false)
+			return null;
+		else
+			return dateFormat.format(date);
+	}
+	
+	public static long getProgramStartTime()
+	{
+		return programStartTime;
+	}
+	
+	public static Log getLog(Log.logType type)
+	{
+		if(initialized == false)
+			return null;
+		
+		for(int i = 0; i < logBook.length; i++)
+		{
+			return(logBook[Log.logType.valueOf(type.toString()).ordinal()]);
+		}
+		return null;
+	}
+	
+	public static void logFailure(String entry)
+	{
+		logFailure(entry, true);
+	}
+	
+	public static void logFailure(String entry, boolean forceTimeStamp)
+	{
+		LogBook.getLog(Log.logType.Failure_Report).writeToLog(entry, forceTimeStamp);
+	}
+	
+	public static void logWarning(String entry)
+	{
+		logWarning(entry, false);
+	}
+	
+	public static void logWarning(String entry, boolean forceTimeStamp)
+	{
+		LogBook.getLog(Log.logType.Warning_Report).writeToLog(entry, forceTimeStamp);
+	}
+	
+	public static void logRequestedReport(String entry)
+	{
+		logRequestedReport(entry, false);
+	}
+	
+	public static void logRequestedReport(String entry, boolean forceTimeStamp)
+	{
+		LogBook.getLog(Log.logType.Requested_Report).writeToLog(entry, forceTimeStamp);
+	}
+	
+	public static void writeToDebug(String entry, boolean forceTimeStamp, boolean request)
+	{
+		if (request == true)
+			LogBook.getLog(Log.logType.Debug_Report).writeToLog(entry, forceTimeStamp);
+	}
+	
+	public static void writeToDebug(String entry, boolean request)
+	{
+		writeToDebug(entry, false, request);
+	}
+}
