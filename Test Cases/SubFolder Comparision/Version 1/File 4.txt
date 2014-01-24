@@ -66,12 +66,7 @@ public class LogBook
 		}
 		return null;
 	}
-	
-	public static void logFailure(String entry)
-	{
-		logFailure(entry, true);
-	}
-	
+		
 	public static void logFailure(String entry, boolean forceTimeStamp)
 	{
 		LogBook.getLog(Log.logType.Failure_Report).writeToLog(entry, forceTimeStamp);

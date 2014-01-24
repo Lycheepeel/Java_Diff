@@ -26,9 +26,9 @@
 		function infobarShowB()
 		{
 			hideInfoBar();
-			document.getElementById("B").style.visibility="visible";
-			activeElement = "B";
-			console.log("active Element = B");
+			document.getElementById("C").style.visibility="visible";
+			activeElement = "C";
+			console.log("active Element = C");
 			console.log(activeElement);
 		};
 		function infobarShowC()
